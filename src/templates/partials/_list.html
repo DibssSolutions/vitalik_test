@@ -1,0 +1,32 @@
+{% set
+list = [
+	{type: "Airbus A300", 
+	country: "Europe",
+	build: 561 },
+	{type: "Antonov An-148/An-158", 
+	country: "Ukraine",
+	build: 35 },
+	{type: "Comac ARJ21 Xiangfeng", 
+	country: "China",
+	build: 35 },
+	{type: "McDonnell Douglas DC-9", 
+	country: "USA",
+	build: 976 }
+]
+ %}
+
+ <h1>List of planes</h1>
+ 
+ <ol>
+ 
+ {% for plane in list %}
+ 	<li>
+ 		<p>
+ 		{{plane.build}}<b>{{plane.type}}</b>
+ 		was made in {{plane.country}}
+ 		</p>
+ 	</li>
+ {% endfor %}
+ 
+ </ol>
+

@@ -1,3 +1,19 @@
 {% macro icon(i) %}
 <svg class="icon icon-{{i}}"><use xlink:href="img/sprite.svg#icon-{{i}}"></use></svg>
 {% endmacro %}
+
+<!-- {% macro plane(type, build, country) %}
+<li>{{build}} <b>{{type}}</b>was made by{{country}}</li>
+{% endmacro %} -->
+
+<!-- {% macro plane(flyer) %}
+<li>{{flyer['build']}} <b>{{flyer['type']}}</b>was made by {{flyer['country']}}</li>
+{% endmacro %} -->
+
+{% macro singleClient(comment, name, position) %}
+<div class="client">
+    <bloquote class="client__comment">{{comment}}</bloquote>
+    <div class="client__name">{{name}}</div>
+    <div class="client__position">{{position}}</div>
+</div>
+{% endmacro %}

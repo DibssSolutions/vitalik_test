@@ -1,0 +1,22 @@
+{% set buttons = ['btc', 'ltc', 'eth', 'xrp', 'dash', 'xmr'] %}
+
+<div class="forecast">
+    <div class="container-inner forecast__container">
+        <h3 class="forecast__title">Popular forecasts</h3>
+        <p class="forecast__descr">The forecasts are updated every 30 minutes</p>
+        <div class="forecast__buttons">
+            {% for btn in buttons %} {% if btn === 'dash' %}
+            <a href="#" class="forecast__btn forecast__btn-active">{{btn}}</a>
+            {% else %}
+            <a href="#" class="forecast__btn">{{btn}}</a>
+            {% endif %} {% endfor %}
+        </div>
+        <div class="forecast__cube-top">
+                <img src="img/box3_light.png" alt="">
+            </div>
+    </div>
+    <div class="forecast__image">
+        <img src="img/forecast.png" alt="">
+    </div>
+    
+</div>

@@ -1,0 +1,21 @@
+{% set buttonText = ['Telegram bot', 'Telegram group', 'Telegram channel'] %}
+
+
+<section class="contacts">
+    <div class="contacts__container container-inner">
+        <div class="contacts__buttons">
+            {% for btnText in buttonText %}
+            <a href="#" class="btn btn-light">{{btnText}}</a>
+            {% endfor %}
+        </div>
+        <div class="contacts__form">
+            <form action="#">
+                <h2 class="title--xlarge title--white">Subscribe
+                    <span class="title--thin">to our news</span>
+                </h2>
+                <input type="text" class="contacts__input" placeholder="email">
+                <input type="submit" class="btn btn-dark" value="Subscribe">
+            </form>   
+        </div>
+    </div>
+</section>

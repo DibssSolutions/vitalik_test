@@ -1,0 +1,46 @@
+.forecast   
+    position: relative
+    background-color: $main-color-dark
+    z-index: 10
+    padding: 144px 0 144px
+    // margin-top: -48px
+    // overflow-y: hidden
+    &__container
+        position: relative
+        z-index: 5
+    &__image  
+        position: relative
+        z-index: 5
+        img
+            width: 100%
+    &:before
+        position: absolute
+        content: ''
+        top: 0
+        right: 0
+        left: 0
+        width: 100%
+        height: 200%
+        background-color: $main-color-dark
+        z-index: 10
+        transform: skewY(30deg)
+        transform-origin: top right
+        z-index: 2
+    &:after
+        position: absolute
+        content: ''
+        bottom: 0
+        right: 0
+        left: 0
+        width: 100%
+        height: 200%
+        background-color: $main-color-dark
+        z-index: 10
+        transform: skewY(30deg)
+        transform-origin: bottom left
+        z-index: 2
+    .forecast__cube-top
+        position: absolute
+        top: calc(-1 * (56vw + 149px))
+        left: -20vw
+        z-index: 10
