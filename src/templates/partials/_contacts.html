@@ -5,7 +5,11 @@
     <div class="contacts__container container-inner">
         <div class="contacts__buttons">
             {% for btnText in buttonText %}
-            <a href="#" class="btn btn-light">{{btnText}}</a>
+            <div class="contacts__button">
+                <a href="#" class="btn btn-light">
+                    {{mixins.icon('telegram')}} {{btnText}}
+                </a>
+            </div>
             {% endfor %}
         </div>
         <div class="contacts__form">
@@ -15,7 +19,7 @@
                 </h2>
                 <input type="text" class="contacts__input" placeholder="email">
                 <input type="submit" class="btn btn-dark" value="Subscribe">
-            </form>   
+            </form>
         </div>
     </div>
 </section>
