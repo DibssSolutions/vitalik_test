@@ -2,27 +2,45 @@
     color: #fff
     margin-bottom: 110px
     margin-top: 127px
+    +sm 
+        margin-bottom: 70px
+        margin-top: 70px
+    +md 
+        margin-top: 60px
+    &__container
+        position: relative
     &__title
         margin-bottom: 48px
     &__wrapper
+        position: relative
         display: flex
         +sm 
             flex-direction: column
     &__btn-wrapper
         display: flex
         justify-content: center
+    &__cube
+        position: absolute
+        right: -16vw
+        bottom: 20%
+
 
 .single-news 
-    flex-grow: 1
+    flex-basis: 30%
+    justify-content: space-between
     margin-bottom: 35px
     &:not(:last-child)
         margin-right: 35px
+        +sm 
+            margin-right: 0
     &__image
         height: 300px
-        width: 300px
+        width: 100%
         margin-bottom: 23px
         border-radius: 8px
         background-color: #222222
+        +sm 
+            height: 60vw
     &__title
         margin-bottom: 19px
         font-size: 30px

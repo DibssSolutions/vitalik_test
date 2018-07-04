@@ -1,14 +1,78 @@
 .contacts
+	margin: 70px auto 52px
+	position: relative
+	+sm 
+		margin: 65px AUTO 192PX
 	&__container 
+		position: relative
 		display: flex
-		margin-top: 50px
-	&__buttons
-		flex-grow: 1
+		justify-content: space-between
+		+sm 
+			flex-direction: column
+	&__direct-links
+		flex-basis: 370px
+		margin-top: 71px
+		+md 
+			flex-basis: 35%
+		+sm 
+			order: 2
+			flex-basis: 100%
 	&__form
-		flex-grow: 1
-	&__button
-		margin-bottom: 20px
+		flex-basis: 500px
+		+md 
+			flex-basis: 60%
+		+sm 
+			order: 1
+			flex-basis: 100%
+	&__btn
+		margin-bottom: 24px
 		.icon
 			display: inline-block
 			margin-right: 10px
+	&__email
+		display: block
+		font-size: 18px
+		font-weight: 600
+		line-height: 4
+		text-align: center
+		color: #ffffff
+	&__cube-left
+		position: absolute
+		top: 25%
+		left: -400px
+		+sm 
+			top: 100%
+			left: 80%
+			
+	&__cube-right
+		position: absolute
+		top: -50px
+		right: -300px
+
+.form
+	color: #fff
+	padding: 48px
+	border: solid 16px #56ecf6
+	border-radius: 8px
+	&__input
+		display: block
+		width: 100%
+		padding: 20px 9px 
+		border: none
+		outline: none
+		background-color: inherit
+		border-bottom: 2px solid rgba(#56ecf6, 0.69)
+		margin: 48px auto
+		font-size: 24px
+		font-weight: 600
+		color: #fff
+		&::placeholder
+			font-size: 24px
+			font-weight: 600
+			color: #fff
+		&:focus
+			border-bottom: 2px solid rgba(#56ecf6, 1)
+			
+
+	
 			

@@ -3,23 +3,31 @@
 
 <section class="contacts">
     <div class="contacts__container container-inner">
-        <div class="contacts__buttons">
+        <div class="contacts__direct-links">
             {% for btnText in buttonText %}
             <div class="contacts__button">
-                <a href="#" class="btn btn-light">
+                <a href="#" class="contacts__btn btn btn-block btn-light">
                     {{mixins.icon('telegram')}} {{btnText}}
                 </a>
             </div>
             {% endfor %}
+            <a href="mailto#" class="contacts__email">support@neurobot.trading</a>   
         </div>
         <div class="contacts__form">
-            <form action="#">
-                <h2 class="title--xlarge title--white">Subscribe
+            <form action="#" class="form">
+                <h2 class="form__title title--large">Subscribe
                     <span class="title--thin">to our news</span>
                 </h2>
-                <input type="text" class="contacts__input" placeholder="email">
-                <input type="submit" class="btn btn-dark" value="Subscribe">
+                <input type="email" class="form__input" placeholder="email">
+                <input type="submit" class="form__submit btn btn-dark btn-block" value="Subscribe">
             </form>
         </div>
+        <div class="contacts__cube-left">
+            <img src="img/box7_dark_bottom.png" alt="cube">
+        </div>
+        <div class="contacts__cube-right">
+            <img src="img/box6_light_bottom.png" alt="cube">
+        </div>
+
     </div>
 </section>

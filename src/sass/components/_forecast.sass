@@ -16,7 +16,10 @@
         line-height: 1.5 
     &__buttons
         display: flex
-        margin-bottom: 42px   
+        justify-content: space-between
+        margin-bottom: 42px 
+        +sm 
+            flex-wrap: wrap  
     &__btn
         display: block
         width: 136px
@@ -30,9 +33,22 @@
         vertical-align: top
         &:not(:last-child)
             margin-right: 30px
+            +sm 
+                margin-right: 0
         &-active
             background-color: $main-color-light
             border: solid 8px $main-color-light
+        +md
+            height: 60px
+            border: solid 6px #223e5c
+            font-size: 18px
+            line-height: 48px
+        +sm 
+            height: 48px
+            width: 30%
+            font-size: 16px
+            line-height: 36px
+
 
     &__image  
         position: relative
@@ -65,8 +81,20 @@
         transform: skewY(30deg)
         transform-origin: bottom left
         z-index: 2
-    .forecast__cube-top
+
+.forecast
+    &__cube-top
         position: absolute
-        top: calc(-1 * (56vw + 149px))
+        top: -66vw
         left: -20vw
         z-index: 10
+    &__cube-middle
+        position: absolute
+        right: -15vw
+        top: -100px
+    &__cube-bottom
+        position: absolute
+        left: 0
+        top: 0
+        z-index: 100
+    

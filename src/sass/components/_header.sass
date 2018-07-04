@@ -2,13 +2,30 @@
     position: relative
     padding: 66px 0 117px
     z-index: 5
+    +sm 
+        padding: 24px 0 72px
 
 .top    
+    position: relative
     height: 100%
     display: flex
     align-items: center
     &__nav 
         margin-left: auto
+        +sm 
+            display: none
+    &__cta
+        margin-right: 9px
+        +sm 
+            display: none
+    &__lang-change
+        +sm 
+            display: none
+    &__toggler
+        display: none
+        +sm 
+            display: block
+            margin-left: auto
 
 .logo
     &__image
@@ -34,19 +51,55 @@
     display: flex
     align-items: center
     &__item
-        margin: 0 18px
+        margin-right: 36px
         // padding: 13px 30px
     &__link
         display: block
         font-size: 16px
         font-weight: 600
         color: #fff
-    &__btn
+    
+.cta
+    display: block
+    padding: 13px 30px
+    border-radius: 16px
+    font-size: 16px
+    font-weight: 600
+    color: $main-color-dark
+    background-color: #ffffff
+
+.lang-changer
+    display: block
+    position: relative
+    font-size: 16px
+    font-weight: 600
+    color: #fff
+    border-radius: 16px 16px 0 0
+    text-align: center
+    &__btn--inactive
+        display: none
+    &__btn--active
+        display: block
         padding: 13px 30px
-        border-radius: 16px
-        color: #1d354e
+    &--open 
         background-color: #ffffff
+        color: $main-color-dark
+    &--open &__btn--inactive
+            display: flex
+            align-items: center
+            justify-content: center
+            position: absolute
+            top: 100%
+            left: 0
+            right: 0
+            height: 100%
+            border-radius: 0 0 16px 16px 
+            background-color: #ffffff
 
+.icon-toggler
+    fill: #fff
+    height: 24px
+    width: 24px
+    cursor: pointer
 
-.js-dropdown
-    display: none
+    

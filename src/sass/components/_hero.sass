@@ -10,6 +10,9 @@
         width: 30%
         color: #ffffff
         font-weight: 600
+        +sm 
+            width: auto
+            margin-left: 0
     &__title
         font-size: 72px
         line-height: 1.17
@@ -17,21 +20,26 @@
         margin-bottom: 30px
         font-size: 30px    
         line-height: 1.6
-    
     &__tv-wrapper
         position: relative
-        z-index: -1
         margin-top: 209px
         height: 720px
-    &__robot
-        position: absolute
-        top: -759px
-        left: -100px
+        +sm 
+            margin-top: 300px
     &__cube-light-shaded
         position: absolute
         right: -15%
         top: -25%
-    &__tv
+
+.tv
+    max-width: 1170px 
+    height: 720px
+    margin: 0 auto
+    position: relative
+    background-color: #fff
+    box-shadow: 0px 24px 72px 0 rgba(29, 53, 78, 0.25)
+    border-radius: 16px
+    &__inner
         position: absolute
         top: 48px
         left: 48px
@@ -46,3 +54,54 @@
         svg
             height: 100%
             width: 100%
+    &__robot
+        position: absolute
+        top: -759px
+        left: -100px
+    &__robot--small-res
+        display: none
+        
+        
+
+$tv-padding: 2vw
+
++md
+    .tv
+        width: 90vw 
+        height: 53vw
+        margin: 0 auto
+        position: relative
+        background-color: #fff
+        box-shadow: 0px 24px 72px 0 rgba(29, 53, 78, 0.25)
+        border-radius: 16px
+        &__inner
+            position: absolute
+            top: $tv-padding
+            left: $tv-padding
+            bottom: $tv-padding
+            right: $tv-padding
+            background-color: #000
+            border-radius: 16px
+        &__play
+            width: 120px
+            height: 120px
+            +vcenter
+            svg
+                height: 100%
+                width: 100%
+       
+
++sm 
+    .tv
+        &__robot--big-res   
+            display: none
+        &__robot--small-res
+            display: block
+            width: 100%
+        &__robot
+            position: absolute
+            top: -600px
+            left: -10%
+            width: 170%
+            img
+                width: 100%

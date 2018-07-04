@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="36" viewBox="0 0 36 36">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
   <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
 <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
@@ -27,5 +27,13 @@
                                                                                                     
                            
 <?xpacket end="w"?></metadata>
-<image id="Rounded_Rectangle_11" data-name="Rounded Rectangle 11" width="36" height="36" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAQAAABLCVATAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiBwQKCDU555CTAAACT0lEQVRIx62Wz0tUURTHP/MGzMSoMQJBwh8YmU6/cFULc9UP+yNqFQgl1rpo07ZaBC6MCFwEbZxWlVrQykopbKEFha0sKNIyIZWZPi3mPR3Tid6rczb3nnu/H+7j3XPPSUmJ1XKUgxygiRqq2dgWmGWaCSYY5mNJ3Mh3O2jeOJY3575IH2FO+z0WJLJle0pB3WG44JA9dlhvxgrZwCvMWG+HPQ5ZCFXdESjrkqrPbN1QXM7bHA9PtbcIuqfqmFWxMIhVjqmaE6w1rxZinibyVgtq3tqALtLAI6ZIYlM8BtJ0BRwC4GEizKrycMAeACYTg4pf0hJQB8C7xKC3ANQF1AAwmxg0B0AmZTHZNrGcEFTJD8AIlCpZusxm4Dk50tzkFAF5znAb2MF5AuAzV0v2FwnhNS+9G09UnbNabAzX+0S8Fc5G1+wPAetBJ8PYxdVt9onZ8HVYsv3vQClfqrpg4xrQ/XB89rfbXRaER/yp6oit4fqIveHozro0+QMI+8u+QDvjgbY4VQbUZyoOCJv9VCJfdHplfD0eCFt8vyLut8K7K7Mr8UCY8ZofVL0kpr0RPq+T60H/LUUC5gGoSpy0ReV8EOZ9TWJQBoC5gBkAmhODdgEwE/AGgGxiUCsArwNGATiWGHQcgKdYa+EfylFbVI4Qc/9cIAejkr2s6rhtsTDZsGQvmV3fRAzba6cNZqzcUFxpxgY77XV4pYm4IKttzbmwkYhrS9EzV3rQARdjQRYdMBvpU2tav+2coJ39NLGNrWV+9ze+Ms0rXvCAL6vhX+uEeEP2WsmIAAAAAElFTkSuQmCC"/>
+<defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M289,31h16v2H289V31Zm0,6h16v2H289V37Zm0,6h16v2H289V43Z" transform="translate(-289 -31)"/>
 </svg>

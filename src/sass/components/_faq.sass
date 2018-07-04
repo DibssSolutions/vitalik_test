@@ -1,8 +1,47 @@
 .faq
     &__container
-        padding: 88px 100px 134px
+        padding: 88px 100px
+        position: relative
+        +md 
+            padding: 88px 24px
+        +sm 
+            padding: 88px 10px 
+    &__title
+        margin-bottom: 59px
+    &__cube
+        position: absolute
+        top: 100px
+        left: -100px
     
 .answer-hidden
     display: none
 
+.question
+    position: relative
+    padding-left: 52px
+    margin-bottom: 40px
+    &__question
+        margin-bottom: 20px
+        font-size: 30px
+        font-weight: 600
+        line-height: 1.6
+        color: $main-color-dark
+    &__icon
+        position: absolute
+        top: 0
+        left: 0
+        width: 36px
+        height: 36px
+        cursor: pointer
+        svg
+            height: 100%
+            width: 100%
+            fill: $main-color-light
+    &__answer
+        display: none
     
+    &-active &__icon
+        transform: rotate(-90deg)
+        
+    &-active &__answer
+        display: block

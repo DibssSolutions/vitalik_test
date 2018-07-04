@@ -29,20 +29,21 @@
         </h2>
         <div class="faq__accordion">
             {% for question in questions %}
+            {% if loop.first %}
+            <div class="question question-active"> 
+            {% else  %}
             <div class="question">
-                <div class="question__icon">
+            {% endif %}     
+            <div class="question__icon">
                     {{mixins.icon('chevron-circle-down')}}
                 </div>
-                <div class="question__question">{{question.question}}</div>
-               
-                {% if loop.first %}
-                    <div class="question__answer">{{question.answer}}</div>  
-                {% else  %}
-                    
-                    <div class="question__answer answer-hidden">{{question.answer}}</div>    
-                {% endif %}
+                <h4 class="question__question">{{question.question}}</h4>
+                <p class="question__answer">{{question.answer}}</p>
             </div>
             {% endfor %}
+        </div>
+        <div class="faq__cube">
+                <img src="img/box6_light_bottom.png" alt="cube">
         </div>
     </div>
 </section>

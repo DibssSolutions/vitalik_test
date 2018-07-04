@@ -4,9 +4,16 @@
     color: $main-color-dark
     &__container
         padding: 88px 100px
+        +md 
+            padding: 40px 24px 60px
+        +sm 
+            padding: 32px 10px 40px
+
     &__title
         margin-bottom: 50px
         line-height: 1
+        +sm 
+            text-align: center
     &__wrapper
         display: flex
         justify-content: space-between
@@ -21,6 +28,11 @@
     position: relative
     &:not(:last-child)
         margin-bottom: 55px
+        +sm
+           margin-bottom: 30px 
+    +sm 
+        &:last-child
+            margin-bottom: 30px 
     &__icon
         position: absolute
         top: 9px
@@ -30,4 +42,7 @@
         font-size: 18px
         font-weight: 300
         line-height: 2
+        +md 
+            font-size: 14px
+            line-height: 1.5
     

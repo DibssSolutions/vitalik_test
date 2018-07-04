@@ -24,18 +24,26 @@
                     <li class="nav__item">
                         <a class="nav__link" href="#">LogIn</a>
                     </li>
-                    <li class="nav__item">
-                        <a class="nav__link nav__btn" href="#">Sign Up</a>
-                    </li>
-                    <li class="nav__item">
-                        <div class="dropdown">
-                            <a class="nav__link nav__btn" js-dropdown-trigger" href="#">Eng</a>
-                            <a class="nav__link js-dropdown" href="#">Rus</a>
-                        </div>
-                    </li>
-
                 </ul>
             </nav>
+            <div class="top__cta">
+                <a class="cta" href="#">Sign Up</a>
+            </div>
+            <div class="top__lang-change">
+                <div class="lang-changer">
+                    <a class="lang-changer__btn lang-changer__btn--active" href="#">Eng</a>
+                    <a class="lang-changer__btn lang-changer__btn--inactive" href="#">Rus</a>
+                </div>
+            </div>
+            <div class="top__toggler">
+                <div class="toggler">
+                    {{mixins.icon('toggler')}}
+                </div>
+            </div>
+
+
+
+
         </div>
     </div>
 </header>
