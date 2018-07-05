@@ -42,15 +42,16 @@
       </header>
       <div class="hero">
         <div class="hero__text">
-          <h2 class="hero__title">Forecasting Exchange Rates</h2>
+          <h2 class="hero__title title--xlarge">Forecasting Exchange Rates</h2>
           <p class="hero__descr">of Cryptocurrencies <br> by Neural Network Algorithm</p> <a href="#" class="btn btn-inline btn-dark">Join Free For 3 Days</a> </div>
         <div class="hero__tv-wrapper">
           <div class="tv">
             <div class="tv__inner"></div>
             <div class="tv__play"> <svg class="icon icon-PlayButton"><use xlink:href="img/sprite.svg#icon-PlayButton"></use></svg> </div>
-            <div class="tv__robot"> <img class="tv__robot--big-res" src="img/robot_desctop.png" alt="robot"> <img class="tv__robot--small-res" src="img/robot_mobile.png" alt="robot"> </div>
-            <div class="hero__cube-light-shaded"> <img src="img/box4_light_shaded.png" alt=""> </div>
+            <picture class="tv__robot">
+              <source srcset="img/robot_mobile.png" media="(max-width: 767px)"> <img srcset="img/robot_desctop.png" alt="robot"> </picture>
           </div>
+          <div class="hero__cube-light-shaded"> <img src="img/box4_light_shaded.png" alt=""> </div>
         </div>
       </div>
       <div class="forecast">
@@ -61,9 +62,14 @@
               class="forecast__btn">xmr</a> </div>
           <div class="forecast__cube-top"> <img src="img/box3_light.png" alt=""> </div>
           <div class="forecast__cube-middle"> <img src="img/box2.png" alt=""> </div>
+          <div class="forecast__cube-bottom"> <img src="img/box1.png" alt=""> </div>
         </div>
-        <div class="forecast__image"> <img src="img/forecast.png" alt=""> </div>
-        <div class="forecast__cube-bottom"> <img src="img/box1.png" alt=""> </div>
+        <!-- <div class="forecast__image">
+        <img src="img/forecast.png" alt="">
+    </div> -->
+        <picture class="forecast__image">
+          <source srcset="img/forecast__mobile.png" media="(max-width: 767px)">
+          <source srcset="img/forecast__tablet.png" media="(max-width: 1023px)"> <img srcset="img/forecast.png" alt="robot"> </picture>
       </div>
       <section class="howitworks">
         <div class="howitworks__container white-rounded-container">
@@ -207,7 +213,7 @@
                 </a> </div> <a href="mailto#" class="contacts__email">support@neurobot.trading</a> </div>
           <div class="contacts__form">
             <form action="#" class="form">
-              <h2 class="form__title title--large">Subscribe <span class="title--thin">to our news</span> </h2> <input type="email" class="form__input" placeholder="email"> <input type="submit" class="form__submit btn btn-dark btn-block" value="Subscribe"> </form>
+              <h2 class="form__title title--large">Subscribe <span class="title--thin">to our news</span> </h2> <input type="email" class="form__input" placeholder="e-mail"> <input type="submit" class="form__submit btn btn-dark btn-block" value="Subscribe"> </form>
           </div>
           <div class="contacts__cube-left"> <img src="img/box7_dark_bottom.png" alt="cube"> </div>
           <div class="contacts__cube-right"> <img src="img/box6_light_bottom.png" alt="cube"> </div>

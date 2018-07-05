@@ -17,11 +17,17 @@
         <div class="forecast__cube-middle">
             <img src="img/box2.png" alt="">
         </div>
-    </div>
-    <div class="forecast__image">
-        <img src="img/forecast.png" alt="">
-    </div>
-    <div class="forecast__cube-bottom">
+        <div class="forecast__cube-bottom">
             <img src="img/box1.png" alt="">
     </div>
+    </div>
+    <!-- <div class="forecast__image">
+        <img src="img/forecast.png" alt="">
+    </div> -->
+    <picture class="forecast__image">
+        <source srcset="img/forecast__mobile.png" media="(max-width: 767px)">
+        <source srcset="img/forecast__tablet.png" media="(max-width: 1023px)">
+        <img srcset="img/forecast.png" alt="robot">
+    </picture>
+    
 </div>

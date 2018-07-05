@@ -4,6 +4,10 @@
     z-index: 10
     padding: 144px 0 144px
     color: #fff
+    +md 
+        padding: 60px 0 80px
+    +sm 
+        padding: 30px 0 50px
     // margin-top: -48px
     // overflow-y: hidden
     &__container
@@ -31,6 +35,7 @@
         font-size: 30px
         font-weight: bold
         vertical-align: top
+        text-transform: uppercase
         &:not(:last-child)
             margin-right: 30px
             +sm 
@@ -68,6 +73,10 @@
         transform: skewY(30deg)
         transform-origin: top right
         z-index: 2
+        +md 
+            height: 150%
+        +sm 
+            height: 100%
     &:after
         position: absolute
         content: ''
@@ -81,6 +90,10 @@
         transform: skewY(30deg)
         transform-origin: bottom left
         z-index: 2
+        +md 
+            height: 150%
+        +sm 
+            height: 100%
 
 .forecast
     &__cube-top
@@ -92,9 +105,13 @@
         position: absolute
         right: -15vw
         top: -100px
+        z-index: 10
+        +md 
+            right: 0
     &__cube-bottom
         position: absolute
-        left: 0
+        left: -572px
         top: 0
         z-index: 100
+
     

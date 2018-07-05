@@ -1,7 +1,7 @@
 .header
     position: relative
     padding: 66px 0 117px
-    z-index: 5
+    z-index: 15
     +sm 
         padding: 24px 0 72px
 
@@ -10,6 +10,9 @@
     height: 100%
     display: flex
     align-items: center
+    z-index: 15
+    &__logo
+        flex-grow: 1
     &__nav 
         margin-left: auto
         +sm 
@@ -29,7 +32,7 @@
 
 .logo
     &__image
-       display: inline-block
+       float: left
        margin-right: 12px
     &__text
         display: inline-block
@@ -58,6 +61,8 @@
         font-size: 16px
         font-weight: 600
         color: #fff
+        +md 
+            font-size: 14px
     
 .cta
     display: block
@@ -67,6 +72,9 @@
     font-weight: 600
     color: $main-color-dark
     background-color: #ffffff
+    +md 
+        font-size: 14px
+        padding: 13px 20px
 
 .lang-changer
     display: block
