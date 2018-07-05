@@ -1,31 +1,43 @@
 .faq
+    position: relative
     &__container
-        padding: 88px 100px
         position: relative
-        +md 
-            padding: 88px 24px
-        +sm 
-            padding: 88px 10px 
     &__title
         margin-bottom: 59px
     &__cube
         position: absolute
-        top: 100px
-        left: -100px
+        top: 80px
+        left: -200px
+        +md 
+            top: -50px
+            right: 50px
+            left: auto
+        +sm 
+            top: -100px
+            left: -70px
+
     
-.answer-hidden
-    display: none
 
 .question
     position: relative
     padding-left: 52px
-    margin-bottom: 40px
+    &:not(:last-child)
+        margin-bottom: 40px
+        +sm 
+            margin-bottom: 30px
     &__question
-        margin-bottom: 20px
+        margin-bottom: 24px
         font-size: 30px
         font-weight: 600
         line-height: 1.6
         color: $main-color-dark
+        +md 
+            font-size: 24px
+            margin-bottom: 24px
+            line-height: 36px
+        +sm 
+            font-size: 18px
+            margin-bottom: 20px
     &__icon
         position: absolute
         top: 0
@@ -39,9 +51,9 @@
             fill: $main-color-light
     &__answer
         display: none
-    
     &-active &__icon
         transform: rotate(-90deg)
-        
     &-active &__answer
         display: block
+        line-height: 2
+        font-size: 18px

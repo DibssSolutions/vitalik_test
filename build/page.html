@@ -16,12 +16,15 @@
       <header class="header">
         <div class="container-inner">
           <div class="top">
-            <div class="top__logo logo"> <img class="logo__image" src="img/logo.png" alt="logo">
-              <div class="logo__text">
-                <h4 class="logo__upper-text">Neurobot <span class="logo__upper-text logo__upper-text--coloured">.trading</span> </h4>
-                <p class="logo__bottom-text">Neural network forecasting</p>
-              </div>
-            </div>
+            <div class="top__logo"> <a href="#" class="logo">
+                    <img class="logo__image" src="img/logo.png" alt="logo">
+                    <h1 class="logo__text">
+                        <span class="logo__upper-text">Neurobot
+                            <span class="logo__upper-text logo__upper-text--coloured">.trading</span>
+                        </span><br>
+                        <span class="logo__bottom-text">Neural network forecasting</span>
+                    </h1>
+                </a> </div>
             <nav class="top__nav">
               <ul class="nav">
                 <li class="nav__item"> <a class="nav__link" href="#">Forecasts</a> </li>
@@ -44,7 +47,7 @@
         <div class="hero__text">
           <h2 class="hero__title title--xlarge">Forecasting Exchange Rates</h2>
           <p class="hero__descr">of Cryptocurrencies <br> by Neural Network Algorithm</p> <a href="#" class="btn btn-inline btn-dark">Join Free For 3 Days</a> </div>
-        <div class="hero__tv-wrapper">
+        <div class="hero__tv-wrapper container">
           <div class="tv">
             <div class="tv__inner"></div>
             <div class="tv__play"> <svg class="icon icon-PlayButton"><use xlink:href="img/sprite.svg#icon-PlayButton"></use></svg> </div>
@@ -72,50 +75,54 @@
           <source srcset="img/forecast__tablet.png" media="(max-width: 1023px)"> <img srcset="img/forecast.png" alt="robot"> </picture>
       </div>
       <section class="howitworks">
-        <div class="howitworks__container white-rounded-container">
-          <h2 class="howitworks__title title--large">How it works?</h2>
-          <div class="howitworks__wrapper">
-            <div class="howitworks__column">
-              <div class="work">
-                <div class="work__icon"> <img src="img/icons/top.png" alt="img/icons/top.png"> </div>
-                <div class="work__text">
-                  <p>The neural network collects and analyses data 24/7 and provides forecasts for various cryptocurrencies’ exchange rates. There are three types of forecasts: for 24 hours, for 48 hours and for one week. Depending on the type of forecast
-                    and the chosen cryptocurrency, the accuracy of the forecast spans within the range of 70-90%.</p>
+        <div class="container">
+          <div class="white-rounded-container--outer">
+            <div class="howitworks__container white-rounded-container--inner">
+              <h2 class="howitworks__title title--large">How it works?</h2>
+              <div class="howitworks__wrapper">
+                <div class="howitworks__column">
+                  <div class="work">
+                    <div class="work__icon"> <img src="img/icons/top.png" alt="img/icons/top.png"> </div>
+                    <div class="work__text">
+                      <p>The neural network collects and analyses data 24/7 and provides forecasts for various cryptocurrencies’ exchange rates. There are three types of forecasts: for 24 hours, for 48 hours and for one week. Depending on the type of forecast
+                        and the chosen cryptocurrency, the accuracy of the forecast spans within the range of 70-90%.</p>
+                    </div>
+                  </div>
+                  <div class="work">
+                    <div class="work__icon"> <img src="img/icons/clock.png" alt="img/icons/clock.png"> </div>
+                    <div class="work__text">
+                      <p>The analysis takes less than a second and comprises the essental aspects of technical analysis, such as technical analysis paterns and signal indicators.</p>
+                    </div>
+                  </div>
+                  <div class="work">
+                    <div class="work__icon"> <img src="img/icons/circle.png" alt="img/icons/circle.png"> </div>
+                    <div class="work__text">
+                      <p>The program will be further enriched by introducing the remaining elements of technical analysis (Fibonacci retracement, Elliot wave theory) and fundamental analysis, which will include news analysis to determine the positve and
+                        negatve tendencies of the market.</p>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="work">
-                <div class="work__icon"> <img src="img/icons/clock.png" alt="img/icons/clock.png"> </div>
-                <div class="work__text">
-                  <p>The analysis takes less than a second and comprises the essental aspects of technical analysis, such as technical analysis paterns and signal indicators.</p>
-                </div>
-              </div>
-              <div class="work">
-                <div class="work__icon"> <img src="img/icons/circle.png" alt="img/icons/circle.png"> </div>
-                <div class="work__text">
-                  <p>The program will be further enriched by introducing the remaining elements of technical analysis (Fibonacci retracement, Elliot wave theory) and fundamental analysis, which will include news analysis to determine the positve and negatve
-                    tendencies of the market.</p>
-                </div>
-              </div>
-            </div>
-            <div class="howitworks__column">
-              <div class="work">
-                <div class="work__icon"> <img src="img/icons/case.png" alt="img/icons/case.png"> </div>
-                <div class="work__text">
-                  <p>The project is targeted at traders with any level of preparaton and experience. Traders no longer have to be aware of every miniscule detail of technical analysis, wastng tme and efort trying to make their skills and knowledge deeper
-                    and more specifc. It facilitates the work of professional traders, allows them to channel their strength into the realizaton of even more worthwhile and important projects and opens up possibilites for the newcomers, who are just entering
-                    the exchange trade, serving as a powerful and reliable aid in their actvity.</p>
-                </div>
-              </div>
-              <div class="work">
-                <div class="work__icon"> <img src="img/icons/connector.png" alt="img/icons/connector.png"> </div>
-                <div class="work__text">
-                  <p>NeuroBot’s algorithm is based on LSTM-network (Long short-term memory) coupled with Gradient Boosting - another machine learning technique.</p>
-                </div>
-              </div>
-              <div class="work">
-                <div class="work__icon"> <img src="img/icons/pulse.png" alt="img/icons/pulse.png"> </div>
-                <div class="work__text">
-                  <p>Thanks to the abilites of neural networks, NeuroBot is constantly learning to beter correspond to the state of the market, to make more accurate forecasts and improve the quality of the resultng work. </p>
+                <div class="howitworks__column">
+                  <div class="work">
+                    <div class="work__icon"> <img src="img/icons/case.png" alt="img/icons/case.png"> </div>
+                    <div class="work__text">
+                      <p>The project is targeted at traders with any level of preparaton and experience. Traders no longer have to be aware of every miniscule detail of technical analysis, wastng tme and efort trying to make their skills and knowledge deeper
+                        and more specifc. It facilitates the work of professional traders, allows them to channel their strength into the realizaton of even more worthwhile and important projects and opens up possibilites for the newcomers, who are just
+                        entering the exchange trade, serving as a powerful and reliable aid in their actvity.</p>
+                    </div>
+                  </div>
+                  <div class="work">
+                    <div class="work__icon"> <img src="img/icons/connector.png" alt="img/icons/connector.png"> </div>
+                    <div class="work__text">
+                      <p>NeuroBot’s algorithm is based on LSTM-network (Long short-term memory) coupled with Gradient Boosting - another machine learning technique.</p>
+                    </div>
+                  </div>
+                  <div class="work">
+                    <div class="work__icon"> <img src="img/icons/pulse.png" alt="img/icons/pulse.png"> </div>
+                    <div class="work__text">
+                      <p>Thanks to the abilites of neural networks, NeuroBot is constantly learning to beter correspond to the state of the market, to make more accurate forecasts and improve the quality of the resultng work. </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -141,96 +148,101 @@
               <h4 class="single-news__title">Тест полифигурно отражает </h4>
               <p class="single-news__text">Визуализация концепии, следовательно, излучает архетип. Не доказано, что струя накладывает девиантный стратегический рыночный план. Интеграл Дирихле отклоняет креативный постулат.</p>
             </div>
-            <div class="news__cube"> <img src="img/box5_light_shaded_bottom.png" alt=""> </div>
           </div>
-          <div class="news__btn-wrapper"> <a href="#" class="btn btn-dark btn-block-center">Load More</a> </div>
+          <div class="news__btn-wrapper"> <a href="#" class="btn btn-dark btn-block">Load More</a> </div>
+          <div class="news__cube"> <img src="img/box5_light_shaded_bottom.png" alt=""> </div>
         </div>
       </section>
       <section class="faq">
-        <div class="faq__container white-rounded-container">
-          <h2 class="faq__title title--xlarge title--dark"> Frequently Asked <span class="title--thin">Questions</span> </h2>
-          <div class="faq__accordion">
-            <div class="question question-active">
-              <div class="question__icon"> <svg class="icon icon-chevron-circle-down"><use xlink:href="img/sprite.svg#icon-chevron-circle-down"></use></svg> </div>
-              <h4 class="question__question">Why the graphic predictions for the 24 hours differs from that of the 48 hour and the weekly?</h4>
-              <p class="question__answer">Since this is an alpha version of the NeuroBot, we use different algorithms to predict the rates of cryptocurrencies for 24 hours, 48 hours and a week. Soon we will implement a unified algorithm for all charts and in the next few updates
-                the graphics will not be different.</p>
-            </div>
-            <div class="question">
-              <div class="question__icon"> <svg class="icon icon-chevron-circle-down"><use xlink:href="img/sprite.svg#icon-chevron-circle-down"></use></svg> </div>
-              <h4 class="question__question">What is the charts time zone?</h4>
-              <p class="question__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eaque ea modi ex, quaerat eos voluptatem nihil nesciunt! Delectus vel magni odit. Iusto nesciunt vitae omnis voluptate commodi porro unde velit quidem illo adipisci, nisi
-                illum cum quos magnam, sint et quam sunt dicta voluptates dolor est nostrum molestiae? Quis, deleniti! Repellendus, deserunt provident fugit dolores temporibus asperiores soluta maxime amet exercitationem molestiae voluptates!</p>
-            </div>
-            <div class="question">
-              <div class="question__icon"> <svg class="icon icon-chevron-circle-down"><use xlink:href="img/sprite.svg#icon-chevron-circle-down"></use></svg> </div>
-              <h4 class="question__question">How accurate are the forecasts?</h4>
-              <p class="question__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eaque ea modi ex, quaerat eos voluptatem nihil nesciunt! Delectus vel magni odit. Iusto nesciunt vitae omnis voluptate commodi porro unde velit quidem illo adipisci, nisi
-                illum cum quos magnam, sint et quam sunt dicta voluptates dolor est nostrum molestiae? Quis, deleniti! Repellendus, deserunt provident fugit dolores temporibus asperiores soluta maxime amet exercitationem molestiae voluptates! Nobis accusamus
-                laudantium quasi pariatur hic officia error. Totam nostrum necessitatibus quis facilis deserunt dignissimos. Explicabo fugiat quaerat neque inventore soluta alias placeat repellat, exercitationem, voluptate, voluptatibus quibusdam enim
-                asperiores! Et aliquid eveniet ipsam sunt sed.</p>
-            </div>
-            <div class="question">
-              <div class="question__icon"> <svg class="icon icon-chevron-circle-down"><use xlink:href="img/sprite.svg#icon-chevron-circle-down"></use></svg> </div>
-              <h4 class="question__question">Why are the graphics of the forecasts so inconvenient?</h4>
-              <p class="question__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eaque ea modi ex, quaerat eos voluptatem nihil nesciunt! Delectus vel magni odit. Iusto nesciunt vitae omnis voluptate commodi porro unde velit quidem illo adipisci, nisi
-                illum cum quos magnam, sint et quam sunt dicta voluptates dolor est nostrum molestiae? Quis, deleniti! Repellendus, deserunt provident fugit dolores temporibus asperiores soluta maxime amet exercitationem molestiae voluptates! Lorem ipsum,
-                dolor sit amet consectetur adipisicing elit. Tempore, corporis quidem distinctio nihil minus nostrum rerum consequatur doloribus nobis a debitis, reiciendis culpa. Similique voluptatibus ratione labore non ad quibusdam! Lorem ipsum dolor
-                sit amet consectetur adipisicing elit. Ullam itaque optio molestiae error quaerat quas quidem deleniti deserunt earum! Possimus provident dolores itaque a, veritatis ex, maiores vero iusto optio numquam quam facere quasi fuga corporis
-                perferendis distinctio, nobis voluptatum quibusdam expedita asperiores accusantium. Sunt, quibusdam. Voluptas autem veniam quam sequi. Dignissimos, obcaecati culpa accusantium eos id, quis soluta esse, consequuntur fuga enim possimus necessitatibus
-                eveniet quidem? Commodi corporis voluptatum unde molestiae quaerat ducimus blanditiis voluptas accusantium sapiente soluta. Non reprehenderit dolorem, sequi quas ad vel placeat dolore eum voluptatibus unde aperiam temporibus deserunt soluta,
-                inventore ipsam molestiae rerum nihil!</p>
-            </div>
-            <div class="question">
-              <div class="question__icon"> <svg class="icon icon-chevron-circle-down"><use xlink:href="img/sprite.svg#icon-chevron-circle-down"></use></svg> </div>
-              <h4 class="question__question">What is the most accurate forecast?</h4>
-              <p class="question__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eaque ea modi ex, quaerat eos voluptatem nihil nesciunt! Delectus vel magni odit. Iusto nesciunt vitae omnis voluptate commodi porro unde velit quidem illo adipisci, nisi
-                illum cum quos magnam, sint et quam sunt dicta voluptates dolor est nostrum molestiae? Quis, deleniti! Repellendus, deserunt provident fugit dolores temporibus asperiores soluta maxime amet exercitationem molestiae voluptates! Nobis accusamus
-                laudantium quasi pariatur hic officia error. Totam nostrum necessitatibus quis facilis deserunt dignissimos. Explicabo fugiat quaerat neque inventore soluta alias placeat repellat, exercitationem, voluptate, voluptatibus quibusdam enim
-                asperiores! Et aliquid eveniet ipsam sunt sed.</p>
+        <div class="faq__container container">
+          <div class="white-rounded-container--outer">
+            <div class="white-rounded-container--inner">
+              <h2 class="faq__title title--xlarge title--dark"> Frequently Asked <br> <span class="title--thin">Questions</span> </h2>
+              <div class="faq__accordion">
+                <div class="question question-active">
+                  <div class="question__icon"> <svg class="icon icon-chevron-circle-down"><use xlink:href="img/sprite.svg#icon-chevron-circle-down"></use></svg> </div>
+                  <h4 class="question__question">Why the graphic predictions for the 24 hours differs from that of the 48 hour and the weekly?</h4>
+                  <p class="question__answer">Since this is an alpha version of the NeuroBot, we use different algorithms to predict the rates of cryptocurrencies for 24 hours, 48 hours and a week. Soon we will implement a unified algorithm for all charts and in the next few updates
+                    the graphics will not be different.</p>
+                </div>
+                <div class="question">
+                  <div class="question__icon"> <svg class="icon icon-chevron-circle-down"><use xlink:href="img/sprite.svg#icon-chevron-circle-down"></use></svg> </div>
+                  <h4 class="question__question">What is the charts time zone?</h4>
+                  <p class="question__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eaque ea modi ex, quaerat eos voluptatem nihil nesciunt! Delectus vel magni odit. Iusto nesciunt vitae omnis voluptate commodi porro unde velit quidem illo adipisci, nisi
+                    illum cum quos magnam, sint et quam sunt dicta voluptates dolor est nostrum molestiae? Quis, deleniti! Repellendus, deserunt provident fugit dolores temporibus asperiores soluta maxime amet exercitationem molestiae voluptates!</p>
+                </div>
+                <div class="question">
+                  <div class="question__icon"> <svg class="icon icon-chevron-circle-down"><use xlink:href="img/sprite.svg#icon-chevron-circle-down"></use></svg> </div>
+                  <h4 class="question__question">How accurate are the forecasts?</h4>
+                  <p class="question__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eaque ea modi ex, quaerat eos voluptatem nihil nesciunt! Delectus vel magni odit. Iusto nesciunt vitae omnis voluptate commodi porro unde velit quidem illo adipisci, nisi
+                    illum cum quos magnam, sint et quam sunt dicta voluptates dolor est nostrum molestiae? Quis, deleniti! Repellendus, deserunt provident fugit dolores temporibus asperiores soluta maxime amet exercitationem molestiae voluptates! Nobis
+                    accusamus laudantium quasi pariatur hic officia error. Totam nostrum necessitatibus quis facilis deserunt dignissimos. Explicabo fugiat quaerat neque inventore soluta alias placeat repellat, exercitationem, voluptate, voluptatibus
+                    quibusdam enim asperiores! Et aliquid eveniet ipsam sunt sed.</p>
+                </div>
+                <div class="question">
+                  <div class="question__icon"> <svg class="icon icon-chevron-circle-down"><use xlink:href="img/sprite.svg#icon-chevron-circle-down"></use></svg> </div>
+                  <h4 class="question__question">Why are the graphics of the forecasts so inconvenient?</h4>
+                  <p class="question__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eaque ea modi ex, quaerat eos voluptatem nihil nesciunt! Delectus vel magni odit. Iusto nesciunt vitae omnis voluptate commodi porro unde velit quidem illo adipisci, nisi
+                    illum cum quos magnam, sint et quam sunt dicta voluptates dolor est nostrum molestiae? Quis, deleniti! Repellendus, deserunt provident fugit dolores temporibus asperiores soluta maxime amet exercitationem molestiae voluptates! Lorem
+                    ipsum, dolor sit amet consectetur adipisicing elit. Tempore, corporis quidem distinctio nihil minus nostrum rerum consequatur doloribus nobis a debitis, reiciendis culpa. Similique voluptatibus ratione labore non ad quibusdam! Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Ullam itaque optio molestiae error quaerat quas quidem deleniti deserunt earum! Possimus provident dolores itaque a, veritatis ex, maiores vero iusto optio numquam quam facere quasi
+                    fuga corporis perferendis distinctio, nobis voluptatum quibusdam expedita asperiores accusantium. Sunt, quibusdam. Voluptas autem veniam quam sequi. Dignissimos, obcaecati culpa accusantium eos id, quis soluta esse, consequuntur fuga
+                    enim possimus necessitatibus eveniet quidem? Commodi corporis voluptatum unde molestiae quaerat ducimus blanditiis voluptas accusantium sapiente soluta. Non reprehenderit dolorem, sequi quas ad vel placeat dolore eum voluptatibus unde
+                    aperiam temporibus deserunt soluta, inventore ipsam molestiae rerum nihil!</p>
+                </div>
+                <div class="question">
+                  <div class="question__icon"> <svg class="icon icon-chevron-circle-down"><use xlink:href="img/sprite.svg#icon-chevron-circle-down"></use></svg> </div>
+                  <h4 class="question__question">What is the most accurate forecast?</h4>
+                  <p class="question__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eaque ea modi ex, quaerat eos voluptatem nihil nesciunt! Delectus vel magni odit. Iusto nesciunt vitae omnis voluptate commodi porro unde velit quidem illo adipisci, nisi
+                    illum cum quos magnam, sint et quam sunt dicta voluptates dolor est nostrum molestiae? Quis, deleniti! Repellendus, deserunt provident fugit dolores temporibus asperiores soluta maxime amet exercitationem molestiae voluptates! Nobis
+                    accusamus laudantium quasi pariatur hic officia error. Totam nostrum necessitatibus quis facilis deserunt dignissimos. Explicabo fugiat quaerat neque inventore soluta alias placeat repellat, exercitationem, voluptate, voluptatibus
+                    quibusdam enim asperiores! Et aliquid eveniet ipsam sunt sed.</p>
+                </div>
+              </div>
+              <div class="faq__cube"> <img src="img/box6_light_bottom.png" alt="cube"> </div>
             </div>
           </div>
-          <div class="faq__cube"> <img src="img/box6_light_bottom.png" alt="cube"> </div>
         </div>
-      </section>
-      <section class="contacts">
-        <div class="contacts__container container-inner">
-          <div class="contacts__direct-links">
-            <div class="contacts__button"> <a href="#" class="contacts__btn btn btn-block btn-light">
+    </div>
+    </section>
+    <section class="contacts">
+      <div class="contacts__container container-inner">
+        <div class="contacts__direct-links">
+          <div class="contacts__button"> <a href="#" class="contacts__btn btn btn-block btn-light">
                     
 <svg class="icon icon-telegram"><use xlink:href="img/sprite.svg#icon-telegram"></use></svg>
  Telegram bot
                 </a> </div>
-            <div class="contacts__button"> <a href="#" class="contacts__btn btn btn-block btn-light">
+          <div class="contacts__button"> <a href="#" class="contacts__btn btn btn-block btn-light">
                     
 <svg class="icon icon-telegram"><use xlink:href="img/sprite.svg#icon-telegram"></use></svg>
  Telegram group
                 </a> </div>
-            <div class="contacts__button"> <a href="#" class="contacts__btn btn btn-block btn-light">
+          <div class="contacts__button"> <a href="#" class="contacts__btn btn btn-block btn-light">
                     
 <svg class="icon icon-telegram"><use xlink:href="img/sprite.svg#icon-telegram"></use></svg>
  Telegram channel
                 </a> </div> <a href="mailto#" class="contacts__email">support@neurobot.trading</a> </div>
-          <div class="contacts__form">
-            <form action="#" class="form">
-              <h2 class="form__title title--large">Subscribe <span class="title--thin">to our news</span> </h2> <input type="email" class="form__input" placeholder="e-mail"> <input type="submit" class="form__submit btn btn-dark btn-block" value="Subscribe"> </form>
-          </div>
-          <div class="contacts__cube-left"> <img src="img/box7_dark_bottom.png" alt="cube"> </div>
-          <div class="contacts__cube-right"> <img src="img/box6_light_bottom.png" alt="cube"> </div>
+        <div class="contacts__form">
+          <form action="#" class="form">
+            <h2 class="form__title title--large">Subscribe <span class="title--thin">to our news</span> </h2> <input type="email" class="form__input" placeholder="e-mail"> <input type="submit" class="form__submit btn btn-dark btn-block" value="Subscribe"> </form>
         </div>
-      </section>
-      <footer class="footer">
-        <div class="footer__container container-inner">
-          <div class="footer__social">
-            <div class="footer__icon"> <svg class="icon icon-facebook"><use xlink:href="img/sprite.svg#icon-facebook"></use></svg> </div>
-            <div class="footer__icon"> <svg class="icon icon-instagram"><use xlink:href="img/sprite.svg#icon-instagram"></use></svg> </div>
-            <div class="footer__icon"> <svg class="icon icon-youtube"><use xlink:href="img/sprite.svg#icon-youtube"></use></svg> </div>
-            <div class="footer__icon"> <svg class="icon icon-vk"><use xlink:href="img/sprite.svg#icon-vk"></use></svg> </div>
-          </div>
-          <div class="footer__text"> <a href="#" class="footer__link">Cookies</a> <a href="#" class="footer__link">Privacy Policy</a> </div>
+        <div class="contacts__cube-left"> <img src="img/box7_dark_bottom.png" alt="cube"> </div>
+        <div class="contacts__cube-right"> <img src="img/box6_light_bottom.png" alt="cube"> </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__container container-inner">
+        <div class="footer__social">
+          <div class="footer__icon"> <svg class="icon icon-facebook"><use xlink:href="img/sprite.svg#icon-facebook"></use></svg> </div>
+          <div class="footer__icon"> <svg class="icon icon-instagram"><use xlink:href="img/sprite.svg#icon-instagram"></use></svg> </div>
+          <div class="footer__icon"> <svg class="icon icon-youtube"><use xlink:href="img/sprite.svg#icon-youtube"></use></svg> </div>
+          <div class="footer__icon"> <svg class="icon icon-vk"><use xlink:href="img/sprite.svg#icon-vk"></use></svg> </div>
         </div>
-        <div class="footer__scew"></div>
-      </footer>
+        <div class="footer__text"> <a href="#" class="footer__link">Cookies</a> <a href="#" class="footer__link">Privacy Policy</a> </div>
+      </div>
+      <div class="footer__scew"></div>
+    </footer>
     </div>
     <!-- END content -->
     <!-- BEGIN scripts -->

@@ -13,6 +13,9 @@
     z-index: 15
     &__logo
         flex-grow: 1
+        margin-left: 25px
+        +sm 
+            margin-left: 0
     &__nav 
         margin-left: auto
         +sm 
@@ -31,23 +34,34 @@
             margin-left: auto
 
 .logo
+    display: block
     &__image
-       float: left
+       display: inline-block
        margin-right: 12px
+       +md 
+            margin-right: 8px
+            width: 36px
+
+        
     &__text
         display: inline-block
         color: #fff
         vertical-align: top
+        line-height: 0
     &__upper-text
         font-size: 24px
         font-weight: 600
-        line-height: 1.15
+        line-height: 28px
+        +md 
+            font-size: 18px
+            
         &--coloured
             color: #56ecf6
-
     &__bottom-text
         font-size: 13px
         font-weight: 500
+        +md 
+            font-size: 10px
 
 
 .nav
@@ -55,7 +69,8 @@
     align-items: center
     &__item
         margin-right: 36px
-        // padding: 13px 30px
+        +md 
+            margin-right: 20px
     &__link
         display: block
         font-size: 16px
@@ -74,21 +89,25 @@
     background-color: #ffffff
     +md 
         font-size: 14px
-        padding: 13px 20px
+        padding: 13px 18px
 
 .lang-changer
     display: block
     position: relative
+    padding: 13px 30px
     font-size: 16px
     font-weight: 600
     color: #fff
     border-radius: 16px 16px 0 0
     text-align: center
+    +md 
+        padding: 13px 20px
+        font-size: 14px
     &__btn--inactive
         display: none
     &__btn--active
         display: block
-        padding: 13px 30px
+        
     &--open 
         background-color: #ffffff
         color: $main-color-dark
