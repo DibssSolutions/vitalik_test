@@ -2,20 +2,25 @@
     position: relative
     &__container
         position: relative
+        +md 
+            padding-top: 46px
+            padding-bottom: 48px
         +sm 
             padding-left: 24px
     &__title
         margin-bottom: 52px
         margin-top: -8px
+        +md 
+            margin-bottom: 30px
         +sm 
             margin-bottom: 27px
     &__cube
         position: absolute
-        top: 88px
+        top: 12px
         left: -189px
         +md 
-            top: -50px
-            right: 50px
+            top: -101px
+            right: 12px
             left: auto
         +sm 
             top: -116px
@@ -26,27 +31,29 @@
 .question
     position: relative
     padding-left: 52px
+    margin-bottom: 24px
+    +md 
+        padding-left: 66px
     +sm 
         padding-left: 42px
         padding-right: 10px
     &:not(:last-child)
         margin-bottom: 28px
+        +md 
+            margin-bottom: 35px
         +sm 
             margin-bottom: 24px
-
     &__question
-        margin-bottom: 24px
         font-size: 30px
         font-weight: 600
         line-height: 1.6
         color: $main-color-dark
         +md 
             font-size: 24px
-            margin-bottom: 24px
-            line-height: 36px
+            line-height: 30px
         +sm 
             font-size: 18px
-            margin-bottom: 20px
+            
             line-height: 24px
     &__icon
         position: absolute
@@ -55,6 +62,7 @@
         width: 36px
         height: 36px
         cursor: pointer
+        transform: rotate(-90deg)
         +sm 
             width: 28px
             top: -8px
@@ -65,14 +73,15 @@
     &__answer
         display: none
     &-active &__icon
-        transform: rotate(-90deg)
+        transform: rotate(0)
     &-active &__question
         margin-bottom: 9px
     &-active &__answer
         display: block
         line-height: 2
         font-size: 18px
-        +sm 
+        +md 
+            margin-top: 14px
             font-size: 14px
             line-height: 22px
 

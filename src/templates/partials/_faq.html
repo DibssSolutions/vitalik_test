@@ -51,8 +51,8 @@ Et aliquid eveniet ipsam sunt sed.' } ] %}
                             <div class="question__icon">
                                 {{mixins.icon('chevron-circle-down')}}
                             </div>
-                            <h4 class="question__question">{{question.question}}</h4>
-                            <p class="question__answer">{{question.answer}}</p>
+                            <h4 class="question__question">{{question.question | safe}}</h4>
+                            <p class="question__answer">{{question.answer}} </p>
                         </div>
                         {% endfor %}
                     </div>
@@ -60,8 +60,6 @@ Et aliquid eveniet ipsam sunt sed.' } ] %}
                         <img src="img/box6_light_bottom.png" alt="cube">
                     </div>
                 </div>
-
             </div>
         </div>
-    </div>
 </section>

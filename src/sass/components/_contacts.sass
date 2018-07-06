@@ -1,6 +1,8 @@
 .contacts
 	margin: 164px auto 52px
 	position: relative
+	+md 
+		margin: 92px auto 60px
 	+sm 
 		margin: 54px AUTO 192PX
 	&__container 
@@ -13,7 +15,8 @@
 		flex-basis: 370px
 		margin-top: 71px
 		+md 
-			flex-basis: 35%
+			flex-basis: 38%
+			margin-top: 33px
 		+sm 
 			order: 2
 			flex-basis: 100%
@@ -21,7 +24,7 @@
 	&__form
 		flex-basis: 500px
 		+md 
-			flex-basis: 60%
+			flex-basis: 55%
 		+sm 
 			order: 1
 			flex-basis: 100%
@@ -41,6 +44,9 @@
 		position: absolute
 		top: 92px
 		left: -373px
+		+md 
+			top: 465px
+			left: 278px
 		+sm 
 			top: 100%
 			left: 80%
@@ -49,6 +55,9 @@
 		position: absolute
 		top: -62px
 		right: -307px
+		+md 
+			top: -83px
+			right: -19px
 		+sm 
 			right: -70px
 			top: -70px
@@ -58,10 +67,12 @@
 	padding: 48px
 	border: solid 16px #56ecf6
 	border-radius: 8px
+	+md 
+		padding: 40px
+		border: solid 12px #56ecf6
 	+sm 
 		padding: 36px
 		padding-left: 24px
-		border: solid 12px #56ecf6
 	&__title 
 		+sm 
 			// letter-spacing: -4px
