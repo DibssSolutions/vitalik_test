@@ -2,29 +2,38 @@
     position: relative
     &__container
         position: relative
+        +sm 
+            padding-left: 24px
     &__title
-        margin-bottom: 59px
+        margin-bottom: 52px
+        margin-top: -8px
+        +sm 
+            margin-bottom: 27px
     &__cube
         position: absolute
-        top: 80px
-        left: -200px
+        top: 88px
+        left: -189px
         +md 
             top: -50px
             right: 50px
             left: auto
         +sm 
-            top: -100px
-            left: -70px
+            top: -116px
+            left: -78px
 
     
 
 .question
     position: relative
     padding-left: 52px
+    +sm 
+        padding-left: 42px
+        padding-right: 10px
     &:not(:last-child)
-        margin-bottom: 40px
+        margin-bottom: 28px
         +sm 
-            margin-bottom: 30px
+            margin-bottom: 24px
+
     &__question
         margin-bottom: 24px
         font-size: 30px
@@ -38,6 +47,7 @@
         +sm 
             font-size: 18px
             margin-bottom: 20px
+            line-height: 24px
     &__icon
         position: absolute
         top: 0
@@ -45,6 +55,9 @@
         width: 36px
         height: 36px
         cursor: pointer
+        +sm 
+            width: 28px
+            top: -8px
         svg
             height: 100%
             width: 100%
@@ -53,7 +66,13 @@
         display: none
     &-active &__icon
         transform: rotate(-90deg)
+    &-active &__question
+        margin-bottom: 9px
     &-active &__answer
         display: block
         line-height: 2
         font-size: 18px
+        +sm 
+            font-size: 14px
+            line-height: 22px
+

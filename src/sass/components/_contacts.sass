@@ -1,8 +1,8 @@
 .contacts
-	margin: 70px auto 52px
+	margin: 164px auto 52px
 	position: relative
 	+sm 
-		margin: 65px AUTO 192PX
+		margin: 54px AUTO 192PX
 	&__container 
 		position: relative
 		display: flex
@@ -17,6 +17,7 @@
 		+sm 
 			order: 2
 			flex-basis: 100%
+			margin-top: 55px
 	&__form
 		flex-basis: 500px
 		+md 
@@ -31,23 +32,23 @@
 			margin-right: 10px
 	&__email
 		display: block
+		margin-top: 4px
 		font-size: 18px
 		font-weight: 600
-		line-height: 4
 		text-align: center
 		color: #ffffff
 	&__cube-left
 		position: absolute
-		top: 25%
-		left: -400px
+		top: 92px
+		left: -373px
 		+sm 
 			top: 100%
 			left: 80%
 			
 	&__cube-right
 		position: absolute
-		top: -50px
-		right: -300px
+		top: -62px
+		right: -307px
 		+sm 
 			right: -70px
 			top: -70px
@@ -57,6 +58,13 @@
 	padding: 48px
 	border: solid 16px #56ecf6
 	border-radius: 8px
+	+sm 
+		padding: 36px
+		padding-left: 24px
+		border: solid 12px #56ecf6
+	&__title 
+		+sm 
+			// letter-spacing: -4px
 	&__input
 		display: block
 		width: 100%
@@ -66,18 +74,23 @@
 		outline: none
 		background-color: inherit
 		border-bottom: 2px solid rgba(#56ecf6, 0.69)
-		margin: 48px auto
+		margin: 8px auto 48px
 		font-size: 24px
 		font-weight: 600
 		color: #fff
+		+sm 
+			font-size: 16px
+			padding: 14px 9px
 		&::placeholder
 			font-size: 24px
 			font-weight: 600
 			color: #fff
+			+sm 
+				font-size: 16px
 		&:focus
 			border-bottom: 2px solid rgba(#56ecf6, 1)
 		+sm 
-			margin: 24px auto
+			margin: 12px auto 24px
 			
 
 	

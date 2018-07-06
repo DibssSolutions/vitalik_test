@@ -6,9 +6,13 @@ body
 	overflow-x: hidden
 	+smooth-scroll
 	+smooth-font
+	+prevent-text
 *
 	box-sizing: border-box
-	// box-shadow: 0 0 0 1px #00f
+	box-shadow: 0 0 0 1px #00f
+	// &::-webkit-scrollbar
+    // 	display: none; 
+
 
 image
 	max-width: 100%	
@@ -22,7 +26,7 @@ a
 
 // ===== LAYOUT =====
 
-.container-inner
+.container-thin
 	max-width: 970px
 	margin: 0 auto
 	position: relative
@@ -36,8 +40,17 @@ a
 	margin: 0 auto
 	padding: 0 15px
 	+md 
-		padding: 0
+		padding: 0 36px
+	+sm
+		padding: 0 10px
 
+.container-inner
+	margin: 0 auto
+	max-width: 1170px
+	// +md 
+	// 	padding: 0 36px
+	// +sm
+	// 	padding: 0 5px
 
 .white-rounded-container--outer
 	margin: 0 auto
@@ -46,21 +59,18 @@ a
 	background-color: #fff
 	box-shadow: 0px 24px 72px 0 rgba(29, 53, 78, 0.25)
 	border-radius: 16px
+	padding: 88px 100px
 	+md 
-		margin: 0 36px
-	+sm
-		margin: 0 5px
-
-.white-rounded-container--inner
-	width: 970px
-	margin: 0 auto
-	padding: 88px 0
-	position: relative
-	+md 
-		width: auto
-		padding: 48px 36px
+		padding: 36px 36px
 	+sm
 		padding: 32px 10px
+
+.white-rounded-container--inner
+	max-width: 970px
+	margin: 0 auto
+	// padding: 88px 0
+	position: relative
+
 		
 
 // ===== BUTTONS =====
@@ -72,7 +82,7 @@ a
 	font-size: 18px
 	font-weight: 600
 	text-align: center
-	+sm 
+	+md 
 		font-size: 16px
 		height: 48px
 		line-height: 48px
@@ -81,7 +91,7 @@ a
 .btn-inline
 	display: inline-block	
 	padding: 0 65px
-	+sm 
+	+md 
 		padding: 0 48px
 		
 
@@ -98,6 +108,11 @@ a
 	background-color: #fff
 	color: $main-color-dark	
 
+.btn-sm-big
+	+sm 
+		height: 66px
+		line-height: 66px
+
 // ===== TITLES =====
 .title--large 
 	font-size: 60px
@@ -107,6 +122,7 @@ a
 		font-size: 48px
 	+sm 
 		font-size: 36px
+		
 
 .title--xlarge 
 	font-size: 72px

@@ -2,11 +2,11 @@
 
 
 <section class="contacts">
-    <div class="contacts__container container-inner">
+    <div class="contacts__container container-thin">
         <div class="contacts__direct-links">
             {% for btnText in buttonText %}
             <div class="contacts__button">
-                <a href="#" class="contacts__btn btn btn-block btn-light">
+                <a href="#" class="contacts__btn btn btn-block btn-light  btn-sm-big">
                     {{mixins.icon('telegram')}} {{btnText}}
                 </a>
             </div>
@@ -19,7 +19,7 @@
                     <span class="title--thin">to our news</span>
                 </h2>
                 <input type="email" class="form__input" placeholder="e-mail">
-                <input type="submit" class="form__submit btn btn-dark btn-block" value="Subscribe">
+                <input type="submit" class="form__submit btn btn-dark btn-block btn-sm-big" value="Subscribe">
             </form>
         </div>
         <div class="contacts__cube-left">
