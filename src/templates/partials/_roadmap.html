@@ -1,0 +1,43 @@
+{% set roadmap = [ {month: 10, year: 2017, title: 'Elliott wave theory', descr: 'The algorithm will take into account the
+Elliott wave in the forecast. Adding new currencies. General improvement of the algorithm.', type: 'right', icon: 'wave'},
+{month: 11, year: 2017, title: 'Basic analysis of news', descr: 'Accounting for news in the forecast of neurobot. Basic analysis
+of market sentiment.', type: 'left', icon: 'analitics'}, {month: 01, year: 2018, title: 'API for trading systems', descr:
+'The launch of a beta api for developing trading robots on the platform Neurobot.', type: 'right', icon: 'api-icon'}, {month:
+03, year: 2018, title: 'Improved news analysis', descr: 'Grouping news into semantic chains according to the positive and
+negative scenarios. This will enable neurobot to predict the emerging of news critical to the market.', type: 'left', icon:
+'improved_analitics'}, {month: 04, year: 2018, title: 'Adding new trading instruments', descr: 'Forecasting tokens. The overall
+improvement in accuracy of the algorithm.', type: 'right', icon: 'trading'}, {month: 03, year: 2018, title: 'The release
+version of Neurobot', descr: 'Run the release version API for developing trading robots.', type: 'left', icon: 'rocket'}
+] %}
+
+<section class="roadmap">
+    <div class="roadmap__container container-thin">
+        <h2 class="roadmap__main-title">
+            <span class="title--xlarge">Roadmap</span>
+            <br> 2017-2018
+        </h2>
+        {% for item in roadmap %} {% if item.type === 'right' %}
+        <div class="roadmap__item roadmap__item--right">
+            {% else %}
+            <div class="roadmap__item roadmap__item--left">
+                {% endif %}
+                <div class="roadmap__line"></div>
+                <h4 class="roadmap__date">
+                    <span class="roadmap__month">{{item.month}}</span>
+                    <span class="roadmap__year">{{item.year}}</span>
+                </h4>
+                <div class="roadmap__text-container">
+                    <div class="roadmap__icon">
+                        {{mixins.icon(item.icon)}}
+                    </div>
+                    <div class="roadmap__text">
+                        <h3 class="roadmap__title">{{item.title}}</h3>
+                        <div class="roadmap__descr">{{item.descr}}</div>
+                    </div>
+                </div>
+            </div>
+
+            {% endfor %}
+
+        </div>
+</section>

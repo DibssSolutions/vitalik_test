@@ -102,37 +102,57 @@
         font-size: 14px
         padding: 10px 18px
 
+=childHeight($n)
+    @for $i from 2 to $n
+        &:nth-child(#{$i})
+            top: calc((#{$i} - 1) * 100%)
+
 .lang-changer
-    display: block
-    position: relative
-    padding: 10px 24px
-    font-size: 16px
-    font-weight: 600
-    color: #fff
-    border-radius: 19px 19px 0 0
-    text-align: center
+    &__list
+        display: block
+        position: relative
+        font-size: 16px
+        font-weight: 600
+        color: #fff
+        text-align: center
     +md 
         padding: 13px 20px
         font-size: 14px
-    &__btn--inactive
+    &__btn
         display: none
+        position: absolute
+        left: 0
+        right: 0
+        padding: 10px 24px
+        background-color: #fff
+        color: $main-color-dark
+        &:first-child
+            border-radius: 19px 19px 0 0
+        &:last-child 
+            border-radius: 0 0 19px 19px 
     &__btn--active
         display: block
-        
-    &--open 
+        position: relative
+        background-color: transparent
+        color: #fff
+    &:hover &__btn 
+        display: flex
+        align-items: center
+        justify-content: center
+        +childHeight(7)
+    &:hover &__btn--active
+        display: block
+        position: relative
         background-color: #ffffff
         color: $main-color-dark
-    &--open &__btn--inactive
-            display: flex
-            align-items: center
-            justify-content: center
-            position: absolute
-            top: 100%
-            left: 0
-            right: 0
-            height: 100%
-            border-radius: 0 0 19px 19px 
-            background-color: #ffffff
+
+
+
+
+
+.toggler 
+    outline: none
+    background-color: transparent
 
 .icon-toggler
     fill: #fff

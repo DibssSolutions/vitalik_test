@@ -1,0 +1,164 @@
+.roadmap
+    color: #fff
+    position: relative
+    padding: 191px 0 100px
+    &__main-title
+        margin-bottom: 60px
+        font-size: 48px
+        line-height: 60px
+    &__item
+        position: relative
+        max-width: 50%
+        // width: 400px
+        height: 375px
+        // border: 5px dotted red
+        // height: 500px
+        // &:after
+        //     content: ''
+        //     color: #fff
+        //     top: calc(50% - 32px)
+        //     position: absolute
+        //     left: -300px 
+        //     height: 300px
+        //     width: 500px
+        //     // background-color: #fff
+        //     border-radius: 50%
+        //     background: radial-gradient(12px 12px, #09a5b0 0%, #09a5b0 50%, transparent 50%)
+        //     // background-repeat: no-repeat
+        //     background-position: 0 0, 28px 28px, 36px 36px
+        //     background-size: 30px 30px
+    // &__line
+    //     position: absolute
+    //     top: 0
+    //     left: -100px
+    //     width: 100%
+    //     height: 100%
+    //     // background-color: #ff0
+    //     transform: rotate(-30deg) skew(30deg) 
+    //     border-radius: 60px
+    //     &:after
+    //         position: absolute
+    //         content: ''
+    //         top: -12px
+    //         left: -12px
+    //         bottom: -12px
+    //         right: -12px
+    //         background-color: #0ff
+    //         z-index: -1
+    //         background: radial-gradient(12px 12px, #09a5b0 0%, #09a5b0 50%, transparent 50%)
+    //         // background-color: #fff
+    //         background-repeat: repeat
+    //         background-size: 30px 12px
+    //         // background-size: 6px 6px
+    //         // transform-origin: 0 50%
+    //         transform: skew(30deg) 
+    //         border-radius: inherit
+            
+
+
+            
+    &__date
+        height: 72px
+        width: 72px
+        background-color: #fff
+        color: $main-color-dark
+        position: absolute
+        display: flex
+        flex-flow: column
+        align-items: center
+        justify-content: center
+        &:after, 
+        &:before
+            position: absolute
+            content: ''
+            height: 12px
+            width: 385%
+            // top: 0
+            // right: 0
+            z-index: 100
+            background: radial-gradient(12px 12px, #09a5b0 0%, #09a5b0 50%, transparent 50%)
+            // background-color: #fff
+            background-repeat: repeat
+            background-size: 30px 12px
+            // background-size: 6px 6px
+            // transform-origin: 0 50%
+            z-index: 100
+        // &:after
+        //     position: absolute
+        //     content: ''
+        //     height: 300px
+        //     width: 1000%
+        //     top: 0
+        //     left: 0
+        //     z-index: 100
+        //     background: radial-gradient(12px 12px, #09a5b0 0%, #09a5b0 50%, transparent 50%)
+        //     background-repeat: repeat
+        //     background-size: 30px 12px
+        //     // transform-origin: 0 50%
+        //     z-index: 100
+        //     transform: skewX(30deg) rotate(-30deg)
+        //     border-radius: 20px 0 0 0
+        
+    &__month
+        display: block
+    &__year 
+        display: block
+    &__text-container
+        position: relative
+        padding-top: 110px
+        display: flex
+    &__icon
+        // display: inline-block
+        width: 48px
+        svg
+            fill: #fff
+            height: 48px
+            width: 48px
+    &__text
+        margin-left: 24px
+    &__title 
+        font-size: 36px
+        line-height: 40px
+        font-weight: 600
+    &__descr
+        font-size: 18px
+        line-height: 2
+
+.roadmap__item--right
+    margin-left: 50%
+    .roadmap__date
+        border-radius: 50% 50% 2px 50% 
+        top: 0
+        right: calc(100% - 36px)
+        &:after 
+            +rotate(-30)
+            top: 11px
+            left: 85%
+            transform-origin: 3% 0
+        &:before 
+            +rotate(-30)
+            bottom: 16px
+            right: 80%
+            transform-origin: 100% 100%
+
+    .roadmap__text-container
+        margin-left: 36px   
+
+    
+.roadmap__item--left
+    .roadmap__date
+        border-radius: 50% 50% 50% 2px
+        top: 0
+        left: calc(100% - 36px)
+        &:after 
+            +rotate(30)
+            top: 7px
+            right: 95%
+            transform-origin: 96% 100%
+        &:before 
+            +rotate(30)
+            bottom: 12px
+            left: 92%
+            transform-origin: 0 0 
+    .roadmap__text-container
+        margin-right: 36px

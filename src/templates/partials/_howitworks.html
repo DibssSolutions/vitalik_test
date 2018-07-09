@@ -17,26 +17,24 @@ and improve the quality of the resultng work. ' } ] %}
 
 
 <section class="howitworks">
-    <div class="container">
-        <div class="white-rounded-container--outer">
-            <div class="howitworks__container white-rounded-container--inner">
-                <h2 class="howitworks__title title--large">How it works?</h2>
-                <div class="howitworks__wrapper">
-                    {% for items in how | slice(2) %}
-                    <div class="howitworks__column">
-                        {% for item in items %}
-                        <div class="work">
-                            <div class="work__icon">
-                                <img src="{{item.img}}" alt="{{item.img}}">
-                            </div>
-                            <div class="work__text">
-                                <p>{{item.text}}</p>
-                            </div>
+    <div class="howitworks__container container">
+        <div class="howitworks__container-inner white-container ">
+            <h2 class="howitworks__title title--large">How it works?</h2>
+            <div class="howitworks__wrapper">
+                {% for items in how | slice(2) %}
+                <div class="howitworks__column">
+                    {% for item in items %}
+                    <div class="work">
+                        <div class="work__icon">
+                            <img src="{{item.img}}" alt="{{item.img}}">
                         </div>
-                        {% endfor %}
+                        <div class="work__text">
+                            <p>{{item.text}}</p>
+                        </div>
                     </div>
                     {% endfor %}
                 </div>
+                {% endfor %}
             </div>
         </div>
     </div>

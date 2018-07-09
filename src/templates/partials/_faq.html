@@ -34,32 +34,30 @@ quaerat neque inventore soluta alias placeat repellat, exercitationem, voluptate
 Et aliquid eveniet ipsam sunt sed.' } ] %}
 
 <section class="faq">
-    <div class="container">
-        <div class="white-rounded-container--outer">
-            <div class="white-rounded-container--inner faq__container">
-                <h2 class="faq__title title--xlarge title--dark">
-                    Frequently Asked
-                    <br>
-                    <span class="title--thin">Questions</span>
-                </h2>
-                <div class="faq__accordion">
-                    {% for question in questions %} {% if loop.first %}
-                    <div class="question question-active">
-                        {% else %}
-                        <div class="question">
-                            {% endif %}
-                            <div class="question__icon">
-                                {{mixins.icon('chevron-circle-down')}}
-                            </div>
-                            <h4 class="question__question">{{question.question | safe}}</h4>
-                            <p class="question__answer">{{question.answer}} </p>
+    <div class="faq__container container data-cube-parent">
+        <div class="faq__container-inner white-container ">
+            <h2 class="faq__title title--xlarge title--dark">
+                Frequently Asked
+                <br>
+                <span class="title--thin">Questions</span>
+            </h2>
+            <div class="faq__accordion">
+                {% for question in questions %} {% if loop.first %}
+                <div class="question question-active">
+                    {% else %}
+                    <div class="question">
+                        {% endif %}
+                        <div class="question__icon">
+                            {{mixins.icon('chevron-circle-down')}}
                         </div>
-                        {% endfor %}
+                        <h4 class="question__question">{{question.question}}</h4>
+                        <div class="question__answer">{{question.answer}} </div>
                     </div>
-                    <div class="faq__cube">
-                        <img src="img/box6_light_bottom.png" alt="cube">
-                    </div>
+                    {% endfor %}
                 </div>
+            </div>
+            <div class="faq__cube" data-cube='faq'>
+                <img src="img/box6_light_bottom.png" alt="cube">
             </div>
         </div>
 </section>

@@ -1,0 +1,32 @@
+{% set tokens = [
+{text: 'You will need to use myetherwallet.com or any similar wallet which supports ERC20 Token.', 
+image: 'vallet-img-1.jpg'},
+{text: 'To start with, create wallet account and use a password. 
+Keystore File is generated automatically, then you’ll need to save all information in a secure place!', 
+image: 'vallet-img-2.jpg'},
+{text: 'Go to the View Wallet Info section authorize via select the Keystore File (UTC / JSON) or any other method of authorization you have chosen.', 
+image: 'vallet-img-3.jpg'},
+{text: 'Enter your File and previously saved password.', 
+image: 'vallet-img-4.jpg'},
+{text: 'Go to View Wallet info section, authorize same way you did it before and proceed to add the NEB Token.', 
+image: 'vallet-img-5.jpg'}
+    
+] %}
+
+<section class="tokens">
+    <div class="tokens__container white-container">
+        <h2 class="tokens__title title--large">
+            How to add NEB Tokens to your wallet?
+        </h2>
+        {% for token in tokens %}
+        <div class="tokens__item">
+            <div class="tokens__text">
+                {{token.text}}
+            </div>
+            <div class="tokens__image">
+                <img src="img/{{token.image}}" alt="{{token.image}}"> 
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>

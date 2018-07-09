@@ -2,7 +2,7 @@
 
 
 <section class="contacts">
-    <div class="contacts__container container-thin">
+    <div class="contacts__container container-thin data-cube-parent">
         <div class="contacts__direct-links">
             {% for btnText in buttonText %}
             <div class="contacts__button">
@@ -22,10 +22,10 @@
                 <input type="submit" class="form__submit btn btn-dark btn-block btn-sm-big" value="Subscribe">
             </form>
         </div>
-        <div class="contacts__cube-left">
+        <div data-cube="contacts-left">
             <img src="img/box7_dark_bottom.png" alt="cube">
         </div>
-        <div class="contacts__cube-right">
+        <div data-cube="contacts-right">
             <img src="img/box6_light_bottom.png" alt="cube">
         </div>
 

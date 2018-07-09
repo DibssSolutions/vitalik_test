@@ -2,20 +2,16 @@
     position: relative
     z-index: 10
     color: $main-color-dark
-    // &__container
-    //     padding: 88px 100px
-    //     +md 
-    //         padding: 40px 24px 60px
-    //     +sm 
-    //         padding: 32px 10px 40px
-    &__container 
-
+    &__container-inner
+        +md 
+           padding-top: 36px 
+           padding-bottom: 55px
     &__title
         margin-bottom: 30px
         line-height: 1
         +md 
             margin-bottom: 38px
-            padding-top: 36px
+            // padding-top: 36px
         +sm 
             text-align: center
             margin-bottom: 27px
@@ -23,9 +19,6 @@
         position: relative
         display: flex
         justify-content: space-between
-        
-        +md 
-            padding-bottom: 55px
         +sm 
             flex-direction: column
     &__column

@@ -3,9 +3,11 @@ body
 	// +css-lock(16, 20, 600, 2000)
 	line-height: 1.4
 	font-family: $Montserrat, sans-serif
+	font-size: 14px
+	font-weight: 400
 	// overflow-x: hidden
-	// +smooth-scroll
-	// +smooth-font
+	+smooth-scroll
+	+smooth-font
 	+prevent-text
 *
 	box-sizing: border-box
@@ -21,6 +23,18 @@ image
 a
 	text-decoration: none
 	color: inherit
+
+ul 
+	margin: 0
+	padding: 0
+
+video 
+  object-fit: cover
+  position: relative
+  object-position: 50% 50%
+  height: 100%
+  width: 100%
+
 
 // +smooth-scroll
 
@@ -48,7 +62,7 @@ a
 
 
 
-.white-rounded-container--outer
+.white-container
 	position: relative
 	margin: 0 auto
 	max-width: 1170px
@@ -61,11 +75,11 @@ a
 	+sm
 		padding: 32px 10px
  
-.white-rounded-container--inner
-	max-width: 970px
-	margin: 0 auto
-	// padding: 88px 0
-	position: relative
+// .white-rounded-container--inner
+// 	max-width: 970px
+// 	margin: 0 auto
+// 	// padding: 88px 0
+// 	position: relative
 
 		
 
