@@ -1,13 +1,25 @@
 {% set roadmap = [ {month: 10, year: 2017, title: 'Elliott wave theory', descr: 'The algorithm will take into account the
-Elliott wave in the forecast. Adding new currencies. General improvement of the algorithm.', type: 'right', icon: 'wave'},
-{month: 11, year: 2017, title: 'Basic analysis of news', descr: 'Accounting for news in the forecast of neurobot. Basic analysis
-of market sentiment.', type: 'left', icon: 'analitics'}, {month: 01, year: 2018, title: 'API for trading systems', descr:
-'The launch of a beta api for developing trading robots on the platform Neurobot.', type: 'right', icon: 'api-icon'}, {month:
-03, year: 2018, title: 'Improved news analysis', descr: 'Grouping news into semantic chains according to the positive and
-negative scenarios. This will enable neurobot to predict the emerging of news critical to the market.', type: 'left', icon:
-'improved_analitics'}, {month: 04, year: 2018, title: 'Adding new trading instruments', descr: 'Forecasting tokens. The overall
-improvement in accuracy of the algorithm.', type: 'right', icon: 'trading'}, {month: 03, year: 2018, title: 'The release
-version of Neurobot', descr: 'Run the release version API for developing trading robots.', type: 'left', icon: 'rocket'}
+Elliott wave in the forecast. Adding new currencies. General improvement of the algorithm.', type: 'active', icon: 'wave',
+img: 'line-top-white.png', imgMob: 'curved-line-mob-top-white.png'}, 
+
+{month: 11, year: 2017, title: 'Basic analysis of news',
+descr: 'Accounting for news in the forecast of neurobot. Basic analysis of market sentiment.', type: 'active', icon: 'analitics',
+img: 'line-dotted.png', imgMob: 'curved-line-mob-dotted.png'},
+
+{month: 01, year: 2018, title: 'API for trading systems', descr:
+'The launch of a beta api for developing trading robots on the platform Neurobot.', type: 'right', icon: 'api-icon', img: 'line-dotted.png'}, 
+
+{month: 03, year: 2018, title: 'Improved news analysis', descr: 'Grouping news into semantic chains according
+to the positive and negative scenarios. This will enable neurobot to predict the emerging of news critical to the market.',
+type: 'left', icon: 'improved_analitics', img: 'line-dotted.png'}, 
+
+{month: 04, year: 2018,
+title: 'Adding new trading instruments', descr: 'Forecasting tokens. The overall improvement in accuracy of the algorithm.',
+type: 'right', icon: 'trading', img: 'line-dotted.png', imgMob: 'curved-line-mob-dotted-reverted.png'}, 
+
+{month: 03, year: 2018, title: 'The release version of Neurobot',
+descr: 'Run the release version API for developing trading robots.', type: 'left', icon: 'rocket', img: 'line-bottom.png',
+imgMob: 'curved-line-mob-dotted-bottom.png'} 
 ] %}
 
 <section class="roadmap">
@@ -16,28 +28,66 @@ version of Neurobot', descr: 'Run the release version API for developing trading
             <span class="title--xlarge">Roadmap</span>
             <br> 2017-2018
         </h2>
-        {% for item in roadmap %} {% if item.type === 'right' %}
-        <div class="roadmap__item roadmap__item--right">
-            {% else %}
-            <div class="roadmap__item roadmap__item--left">
-                {% endif %}
-                <div class="roadmap__line"></div>
-                <h4 class="roadmap__date">
-                    <span class="roadmap__month">{{item.month}}</span>
-                    <span class="roadmap__year">{{item.year}}</span>
-                </h4>
-                <div class="roadmap__text-container">
-                    <div class="roadmap__icon">
-                        {{mixins.icon(item.icon)}}
+
+
+
+        <div class="roadmap__wrapper" data-cube-parent>
+            {% for item in roadmap %}
+            <div class="roadmap__item">
+                <div class="roadmap__item-container">
+                    <div class="roadmap__line ">
+                    
+                    {% if item.img and item.imgMob %}
+                        <picture>
+                            <source srcset="img/{{item.imgMob}}" media="(max-width: 767px)">
+                            <img srcset="img/{{item.img}}" alt="img/{{item.img}}">
+                        </picture>
+                    {% else  %}
+                        <img src="img/{{item.img}}" alt="img/{{item.img}}">
+                    {% endif %} 
                     </div>
-                    <div class="roadmap__text">
-                        <h3 class="roadmap__title">{{item.title}}</h3>
-                        <div class="roadmap__descr">{{item.descr}}</div>
+
+                    {% if item.type === 'active' %}
+                    <h4 class="roadmap__date roadmap__date--active">
+                        <span class="roadmap__month ">{{item.month}}</span>
+                        <span class="roadmap__year ">{{item.year}}</span>
+                    </h4>
+                    {% else %}
+                    <h4 class="roadmap__date">
+                        <span class="roadmap__month ">{{item.month}}</span>
+                        <span class="roadmap__year ">{{item.year}}</span>
+                    </h4>
+                    {% endif %}
+
+                    <div class="roadmap__text-container ">
+                        <div class="roadmap__icon ">
+                            {{mixins.icon(item.icon)}}
+                        </div>
+                        <div class="roadmap__text ">
+                            <h3 class="roadmap__title ">{{item.title}}</h3>
+                            <div class="roadmap__descr ">{{item.descr}}</div>
+                        </div>
                     </div>
                 </div>
             </div>
-
             {% endfor %}
-
+            <div data-cube='top-building'>
+                <img src="img/building-top-big.png" alt="">
+            </div>
+            <div data-cube='middle-building-upper'>
+                <img src="img/building-middle-small.png" alt="">
+            </div>
+            <div data-cube='middle-building-lower'>
+                <img src="img/building-middle-small.png" alt="">
+            </div>
+            <div data-cube='bottom-building'>
+                <img src="img/building-bottom-small.png" alt="">
+            </div>
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="305px" height="398px">
+                <path fill-rule="evenodd" stroke="rgb(9, 165, 176)" stroke-width="12px" stroke-dasharray="12, 24" stroke-linecap="round" stroke-linejoin="round"
+                    fill="none" d="M12.251,12.081 C105.626,66.681 258.865,156.283 258.865,156.283 C296.375,178.217 296.375,213.777 258.865,235.710 C258.865,235.710 100.291,328.432 7.470,382.707 "
+                />
+            </svg> -->
         </div>
+    </div>
 </section>

@@ -1,2 +1,61 @@
-.tokens-form__copy-btn 
-    background-color: $main-color-light   
+.tokens-form
+    padding-top: 16px
+    &__container
+        padding-top: 82px 
+        padding-bottom: 106px
+    &__title 
+        margin-top: -10px
+        margin-bottom: 30px
+    &__text
+        font-weight: 300
+        font-size: 18px
+        line-height: 2
+        p 
+            margin-bottom: 32px
+    &__form-title
+        font-size: 36px
+        font-weight: 600
+        line-height: 2
+    &__input-field
+        margin: 10px auto 48px
+        display: flex
+        align-items: center
+        border: 8px solid #56ecf6
+        border-radius: 8px
+        +sm 
+            margin: 24px auto 16px
+    &__input
+        display: block
+        flex-grow: 1
+        padding: 22px 36px 32px
+        color: $main-color-dark
+        font-size: 24px
+        font-weight: 700
+        +sm 
+            padding: 16px
+        &::placeholder
+            font-size: inherit
+            font-weight: inherit
+            color: inherit
+    &__copy-btn 
+        width: 90px
+        // height: 100%
+        padding: 22px 0 30px
+        background-color: #56ecf6
+        outline: none
+        svg
+            fill: #fff
+            height: 28px
+            width: 28px
+    &__submit
+        margin-right: 48px
+        +sm 
+            width: 100%
+            margin: 0 auto 16px
+    &__btn
+        width: 38%
+        +sm
+            width: 100%        
+        
+            
+
