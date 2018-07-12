@@ -177,15 +177,22 @@
                 width: 36px
         &__item:nth-child(1)
             max-height: 410px
+            min-height: 410px
             .roadmap__date
                 top: 105px
             .roadmap__text-container
                 padding-top: 180px    
             .roadmap__line 
+                position: relative
                 max-height: 410px
+                picture 
+                    position: relative
                 img 
+                    position: absolute
                     max-height: 410px
-                    margin-left: 141px
+                    top: 0
+                    right: -211px
+
         &__item:nth-child(2),
         &__item:nth-child(4),
         &__item:nth-child(6)
@@ -206,9 +213,8 @@
             margin: 0 auto
         &__item
             margin-bottom: 44px
-        &__item-container
-            height: auto
-            min-height: auto
+            // height: auto
+            max-height: auto
         &__date
             height: 52px
             width: 52px
@@ -283,6 +289,8 @@
             padding: 0
 
     .roadmap__item:nth-child(1)
+        max-height: auto
+        min-height: 0
         .roadmap__item-container
             &:before
                 height: calc(100% + 20px)
@@ -297,7 +305,10 @@
         .roadmap__line
             top: -176px
             left: 21px
-            
+            max-height: auto
+            img 
+                top: 0
+                left: 0
             
     .roadmap__item:nth-child(2)
         .roadmap__item-container
