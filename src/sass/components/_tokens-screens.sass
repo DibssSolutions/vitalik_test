@@ -1,25 +1,40 @@
 .tokens 
     margin-bottom: 88px
-    // margin-top: 200px
+    margin-top: 200px
+    +md 
+        margin-bottom: 
+        margin-top: 0
     &__container
         margin-bottom: 22px
+        padding-top: 76px
+        padding-bottom: 110px
+        +md 
+            padding-top: 36px
+            padding-bottom: 28px
     &__title
-        margin-bottom: 40px
+        margin-bottom: 29px
+        line-height: 72px
+        +md 
+            margin-bottom: 27px
+            line-height: 50px
         +sm 
-            margin-bottom: 18px
-    &__item
-        margin-bottom: 36px
+            margin-bottom: 16px
+            line-height: 36px
+    &__item:not(:last-child)
+        margin-bottom: 16px
+        +md 
+            margin-bottom: 36px
         +sm 
-            margin-bottom: 24px
+            margin-bottom: 16px
     &__text 
-        margin-bottom: 30px
+        margin-bottom: 24px
         font-size: 18px
         line-height: 2
         font-weight: 300
         +md 
             font-size: 14px
             line-height: 22px
-            margin-bottom: 20px
+            margin-bottom: 21px
     &__image
         img 
             max-width: 100% 

@@ -1,0 +1,76 @@
+<!-- {% set roadmap = [ {month: 10, year: 2017, title: 'Elliott wave theory', descr: 'The algorithm will take into account the
+Elliott wave in the forecast. Adding new currencies. General improvement of the algorithm.', type: 'active', icon: 'wave',
+img: 'line-top-white.png', imgMob: 'curved-line-mob-top-white.png'}, {month: 11, year: 2017, title: 'Basic analysis of news',
+descr: 'Accounting for news in the forecast of neurobot. Basic analysis of market sentiment.', type: 'active', icon: 'analitics',
+img: 'line-dotted.png', imgMob: 'curved-line-mob-dotted.png'}, {month: 01, year: 2018, title: 'API for trading systems',
+descr: 'The launch of a beta api for developing trading robots on the platform Neurobot.', type: 'right', icon: 'api-icon',
+img: 'line-dotted-left.png'}, {month: 03, year: 2018, title: 'Improved news analysis', descr: 'Grouping news into semantic
+chains according to the positive and negative scenarios. This will enable neurobot to predict the emerging of news critical
+to the market.', type: 'left', icon: 'improved_analitics', img: 'line-dotted.png'}, {month: 04, year: 2018, title: 'Adding
+new trading instruments', descr: 'Forecasting tokens. The overall improvement in accuracy of the algorithm.', type: 'right',
+icon: 'trading', img: 'line-dotted-left.png', imgMob: 'curved-line-mob-dotted-reverted.png'}, {month: 03, year: 2018, title:
+'The release version of Neurobot', descr: 'Run the release version API for developing trading robots.', type: 'left', icon:
+'rocket', img: 'line-bottom.png', imgMob: 'curved-line-mob-dotted-bottom.png'} ] %}
+
+<section class="roadmap">
+    <div class="roadmap__container container-thin">
+        <h2 class="roadmap__main-title">
+            <span class="roadmap__main-title--large">Roadmap</span>
+            <span class="roadmap__main-title--small">2017-2018</span>
+        </h2>
+
+        <div class="roadmap__tree" data-cube-parent>
+            {% for item in roadmap %} {% if item.type === 'active' %}
+            <h4 class="roadmap__date roadmap__date--active">
+                <span class="roadmap__month ">{{item.month}}</span>
+                <span class="roadmap__year ">{{item.year}}</span>
+            </h4>
+            {% else %}
+            <h4 class="roadmap__date">
+                <span class="roadmap__month ">{{item.month}}</span>
+                <span class="roadmap__year ">{{item.year}}</span>
+            </h4>
+            {% endif %} {% endfor%} {% for item in roadmap %}
+            <div class="roadmap__line">
+                {% if item.img and item.imgMob %}
+                <picture>
+                    <source srcset="img/{{item.imgMob}}" media="(max-width: 767px)">
+                    <img srcset="img/{{item.img}}" alt="img/{{item.img}}">
+                </picture>
+                {% else %}
+                <img src="img/{{item.img}}" alt="img/{{item.img}}"> {% endif %}
+            </div>
+            {% endfor%}
+        </div>
+
+
+        <div class="roadmap__items">
+            {% for item in roadmap %}
+            <div class="roadmap__item">
+                <div class="roadmap__icon ">
+                    {{mixins.icon(item.icon)}}
+                </div>
+                <div class="roadmap__text ">
+                    <h3 class="roadmap__title ">{{item.title}}</h3>
+                    <div class="roadmap__descr ">{{item.descr}}</div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div data-cube='top-building'>
+            <img src="img/building-top-big.png" alt="">
+        </div>
+        <div data-cube='middle-building-upper'>
+            <img src="img/building-middle-small-upper.png" alt="">
+        </div>
+        <div data-cube='middle-building-lower'>
+            <img src="img/building-middle-small-lower.png" alt="">
+        </div>
+        <div data-cube='bottom-building'>
+            <img src="img/building-bottom-small.png" alt="">
+        </div>
+        <div data-cube='roadmap-cube'>
+            <img src="img/box3_light.png" alt="">
+        </div>
+    </div>
+</section> -->

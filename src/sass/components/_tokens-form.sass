@@ -1,59 +1,113 @@
 .tokens-form
     padding-top: 16px
     &__container
-        padding-top: 82px 
+        padding-top: 72px 
         padding-bottom: 106px
+        +md 
+            padding-top: 32px
+            padding-bottom: 48px
+        +sm 
+            padding: 24px 24px 40px
     &__title 
-        margin-top: -10px
         margin-bottom: 30px
+        +md 
+            margin-bottom: 12px
+        
+
     &__text
         font-weight: 300
         font-size: 18px
         line-height: 2
+        +md
+            font-size: 14px
+            line-height: 22px
+            margin-bottom: 36px
         p 
-            margin-bottom: 32px
+            margin-bottom: 40px
+            +md 
+                margin-bottom: 24px
+            +sm 
+                &:last-child 
+                    display: none
+        
     &__form-title
         font-size: 36px
         font-weight: 600
         line-height: 2
+        +md 
+            line-height: 36px
+        +sm 
+            font-size: 24px
+            width: 110%
+
     &__input-field
-        margin: 10px auto 48px
+        width: 100%
         display: flex
-        align-items: center
+        align-items: stretch
+        margin: 10px auto 48px
         border: 8px solid #56ecf6
         border-radius: 8px
+        +md 
+            margin: 30px auto 36px
+            border: 6px solid #56ecf6
+            border-radius: 6px
         +sm 
-            margin: 24px auto 16px
+            margin: 12px auto 16px
     &__input
         display: block
         flex-grow: 1
-        padding: 22px 36px 32px
+        padding-left: 36px
         color: $main-color-dark
         font-size: 24px
         font-weight: 700
+        +text-overflow
+        +md 
+            padding-left: 22px
+            font-size: 18px
         +sm 
             padding: 16px
+            font-size: 14px
         &::placeholder
             font-size: inherit
             font-weight: inherit
             color: inherit
     &__copy-btn 
         width: 90px
-        // height: 100%
+        height: 90px
         padding: 22px 0 30px
         background-color: #56ecf6
         outline: none
-        svg
-            fill: #fff
-            height: 28px
-            width: 28px
+        display: flex
+        justify-content: center
+        align-items: center
+        +md 
+            width: 60px
+            height: 60px
+            padding: 16px 0 16px
+            svg
+                fill: #fff
+                height: 100%
+                width: 100%
+        +sm 
+            height: 50px
+            width: 72px
+            margin-right: -6px
+            svg
+                // height: 100%
+                width: 180%
+        
     &__submit
         margin-right: 48px
+        +md 
+            margin-right: 26px
+            width: calc(50% - 26px)
         +sm 
             width: 100%
             margin: 0 auto 16px
     &__btn
         width: 38%
+        +md 
+            width: calc(50% - 26px)
         +sm
             width: 100%        
         
