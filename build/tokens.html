@@ -30,7 +30,7 @@
             <nav class="top__nav">
               <ul class="nav">
                 <li class="nav__item"> <a class="nav__link" href="#">Forecasts</a> </li>
-                <li class="nav__item"> <a class="nav__link" href="#">Tokens</a> </li>
+                <li class="nav__item nav__item--active"> <a class="nav__link" href="#">Tokens</a> </li>
                 <li class="nav__item"> <a class="nav__link" href="#">About</a> </li>
                 <li class="nav__item"> <a class="nav__link" href="#">LogIn</a> </li>
               </ul>
@@ -54,7 +54,7 @@
         </div>
       </header>
       <section class="tokens-form container">
-        <div class="tokens-form__container white-container">
+        <div class="tokens-form__container white-container" data-cube-parent>
           <h2 class="tokens-form__title title--xlarge"> Tokens </h2>
           <div class="tokens-form__text">
             <p> The NeuroBot is a neural network algorithm created for forecasting exchange rates of cryptocurrencies. The neural network collects and analyses Data 24/7 and provides forecasts for various cryptocurrencies' exchange rates. There are three
@@ -73,7 +73,10 @@
             <div class="tokens-form__buttons-field"> <input type="submit" class="tokens-form__submit btn btn-dark tokens-form__btn btn-colored" value="etherscan.io" /> <a href="#" class="btn btn-outline tokens-form__btn">Etherdelta.com</a> </div>
           </form>
         </div>
-      </section> -->
+        <div data-cube='tokens-form-cube-1'> <img src="img/box4_light_shaded.png" alt=""> </div>
+        <div data-cube='tokens-form-cube-2'> <img src="img/box4_light_shaded.png" alt=""> </div>
+        <div data-cube='tokens-form-cube-3'> <img src="img/box3_light.png" alt=""> </div>
+      </section>
       <section class="roadmap">
         <div class="roadmap__container container-thin">
           <h2 class="roadmap__main-title"> <span class="roadmap__main-title--large">Roadmap</span> <br> <span class="roadmap__main-title--small">2017-2018</span> </h2>
@@ -83,7 +86,7 @@
                 <div class="roadmap__line" data-cube-parent>
                   <div data-cube='top-building'> <img src="img/building-top-big.png" alt="cube"> </div>
                   <picture>
-                    <source srcset="img/curved-line-mob-top-white.png" media="(max-width: 767px)"> <img srcset="img/line-top-white.png" alt="img/line-top-white.png"> </picture>
+                    <source srcset="img/curved-line-mob-top-white.png" media="(max-width: 767px)"> <img class="roadmap__line-img" srcset="img/line-top-white.png" alt="img/line-top-white.png"> </picture>
                 </div>
                 <h4 class="roadmap__date roadmap__date--active"> <span class="roadmap__month ">10</span> <span class="roadmap__year ">2017</span> </h4>
                 <div class="roadmap__text-container ">
@@ -100,7 +103,7 @@
                 <div class="roadmap__line" data-cube-parent>
                   <div data-cube='middle-building-upper'> <img src="img/building-middle-small-upper.png" alt="cube"> </div>
                   <picture>
-                    <source srcset="img/curved-line-mob-dotted.png" media="(max-width: 767px)"> <img srcset="img/line-dotted.png" alt="img/line-dotted.png"> </picture>
+                    <source srcset="img/curved-line-mob-dotted.png" media="(max-width: 767px)"> <img class="roadmap__line-img" srcset="img/line-dotted.png" alt="img/line-dotted.png"> </picture>
                 </div>
                 <h4 class="roadmap__date roadmap__date--active"> <span class="roadmap__month ">11</span> <span class="roadmap__year ">2017</span> </h4>
                 <div class="roadmap__text-container ">
@@ -114,8 +117,8 @@
             </div>
             <div class="roadmap__item">
               <div class="roadmap__item-container">
-                <div class="roadmap__line" data-cube-parent> <img src="img/line-dotted-left.png" alt="img/line-dotted-left.png"> </div>
-                <h4 class="roadmap__date"> <span class="roadmap__month ">1</span> <span class="roadmap__year ">2018</span> </h4>
+                <div class="roadmap__line" data-cube-parent> <img class="roadmap__line-img" src="img/line-dotted-left.png" alt="img/line-dotted-left.png"> </div>
+                <h4 class="roadmap__date"> <span class="roadmap__month ">01</span> <span class="roadmap__year ">2018</span> </h4>
                 <div class="roadmap__text-container ">
                   <div class="roadmap__icon "> <svg class="icon icon-api-icon"><use xlink:href="img/sprite.svg#icon-api-icon"></use></svg> </div>
                   <div class="roadmap__text ">
@@ -127,8 +130,8 @@
             </div>
             <div class="roadmap__item">
               <div class="roadmap__item-container">
-                <div class="roadmap__line" data-cube-parent> <img src="img/line-dotted.png" alt="img/line-dotted.png"> </div>
-                <h4 class="roadmap__date"> <span class="roadmap__month ">3</span> <span class="roadmap__year ">2018</span> </h4>
+                <div class="roadmap__line" data-cube-parent> <img class="roadmap__line-img" src="img/line-dotted.png" alt="img/line-dotted.png"> </div>
+                <h4 class="roadmap__date"> <span class="roadmap__month ">03</span> <span class="roadmap__year ">2018</span> </h4>
                 <div class="roadmap__text-container ">
                   <div class="roadmap__icon "> <svg class="icon icon-improved_analitics"><use xlink:href="img/sprite.svg#icon-improved_analitics"></use></svg> </div>
                   <div class="roadmap__text ">
@@ -143,9 +146,9 @@
                 <div class="roadmap__line" data-cube-parent>
                   <div data-cube='middle-building-lower'> <img src="img/building-middle-small-lower.png" alt="cube"> </div>
                   <picture>
-                    <source srcset="img/curved-line-mob-dotted-reverted.png" media="(max-width: 767px)"> <img srcset="img/line-dotted-left.png" alt="img/line-dotted-left.png"> </picture>
+                    <source srcset="img/curved-line-mob-dotted-reverted.png" media="(max-width: 767px)"> <img class="roadmap__line-img" srcset="img/line-dotted-left.png" alt="img/line-dotted-left.png"> </picture>
                 </div>
-                <h4 class="roadmap__date"> <span class="roadmap__month ">4</span> <span class="roadmap__year ">2018</span> </h4>
+                <h4 class="roadmap__date"> <span class="roadmap__month ">04</span> <span class="roadmap__year ">2018</span> </h4>
                 <div class="roadmap__text-container ">
                   <div class="roadmap__icon "> <svg class="icon icon-trading"><use xlink:href="img/sprite.svg#icon-trading"></use></svg> </div>
                   <div class="roadmap__text ">
@@ -160,9 +163,9 @@
                 <div class="roadmap__line" data-cube-parent>
                   <div data-cube='bottom-building'> <img src="img/building-bottom-small.png" alt="cube"> </div>
                   <picture>
-                    <source srcset="img/curved-line-mob-dotted-bottom.png" media="(max-width: 767px)"> <img srcset="img/line-bottom.png" alt="img/line-bottom.png"> </picture>
+                    <source srcset="img/curved-line-mob-dotted-bottom.png" media="(max-width: 767px)"> <img class="roadmap__line-img" srcset="img/line-bottom.png" alt="img/line-bottom.png"> </picture>
                 </div>
-                <h4 class="roadmap__date"> <span class="roadmap__month ">3</span> <span class="roadmap__year ">2018</span> </h4>
+                <h4 class="roadmap__date"> <span class="roadmap__month ">03</span> <span class="roadmap__year ">2018</span> </h4>
                 <div class="roadmap__text-container ">
                   <div class="roadmap__icon "> <svg class="icon icon-rocket"><use xlink:href="img/sprite.svg#icon-rocket"></use></svg> </div>
                   <div class="roadmap__text ">
@@ -172,18 +175,6 @@
                 </div>
               </div>
             </div>
-            <!-- <div data-cube='top-building'>
-                <img src="img/building-top-big.png" alt="">
-            </div>
-            <div data-cube='middle-building-upper'>
-                <img src="img/building-middle-small-upper.png" alt="">
-            </div>
-            <div data-cube='middle-building-lower'>
-                <img src="img/building-middle-small-lower.png" alt="">
-            </div>
-            <div data-cube='bottom-building'>
-                <img src="img/building-bottom-small.png" alt="">
-            </div> -->
             <div data-cube='roadmap-cube'> <img src="img/box3_light.png" alt=""> </div>
           </div>
         </div>

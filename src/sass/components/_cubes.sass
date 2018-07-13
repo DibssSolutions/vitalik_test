@@ -65,17 +65,24 @@
             left: -200px
             top: 1400px   
 
+
+
 [data-cube="top-building"]
-	top: -110px
-	right: -300px
+	top: -121px
+	right: -307px
 	z-index: 100	
 	+md 
-		width: 145px
-		top: -94px
-		right: 122px
-	+sm 		
-		top: -302px
-		right: -93px
+		max-width: 145px
+		top: -78px
+		right: 0px
+	+sm 	
+		top: -123px
+		left: 205px
+
++md 
+	[data-cube="top-building"] img
+		width: 145px		
+			
 	
 
 [data-cube="middle-building-upper"]
@@ -84,12 +91,12 @@
 	z-index: 100
 	+md 
 		width: 72px
-		top: 412px
-		right: 212px
+		top: 0px
+		right: auto
+		left: 78px
 	+sm 
-		
-		top: 383px
-		right: 147px
+		top: 39px
+		left: 89px
 
 [data-cube="middle-building-lower"]
 	top: 9px
@@ -97,26 +104,28 @@
 	z-index: 100
 	+md 
 		width: 72px
-		top: 1260px
-		right: 446px
+		top: 7px
+		right: 80px
 	+sm 
-		
-		top: 1014px
-		right: 115px
+		top: 62px
+		right: auto
+		left: 91px
 	
 
 [data-cube="bottom-building"]
-	bottom: 200px
-	right: 50px
+	bottom: 180px
+	right: -185px
 	z-index: 100
 	+md 
 		width: 136px
 		bottom: 96px
-		right: 41px
+		right: auto
+		left: 182px
 	+sm 
 		width: 120px
-		bottom: 61px
-		right: 89px
+		bottom: 36px
+		// right: 95px
+		left: 106px
 
 [data-cube="roadmap-cube"]
 	bottom: 335px
@@ -125,11 +134,45 @@
 	+md 
 		width: 90px
 		bottom: 90px
-		right: 221px
+		right: 30%
 	+sm 
 		width: 110px
-		top: 1019px
+		top: 55%
 		right: 15px
+
+[data-cube="tokens-form-cube-1"]
+	width: 500px
+	bottom: 83px
+	left: -458px
+	z-index: 100
+	+md 
+		bottom: -400px
+		left: -200px
+	+sm 
+		display: none
+
+[data-cube="tokens-form-cube-2"]
+	width: 334px
+	top: 209px
+	right: -203px
+	z-index: 100
+	+md 
+		top: auto
+		bottom: -210px
+		right: -210
+	+sm 
+		display: none
+
+[data-cube="tokens-form-cube-3"]
+	top: -36px
+	right: 290px
+	z-index: 100
+	+md 
+		top: 20px
+		right: -41px
+	+sm 
+		display: none
+
 
 // [data-cube="top-building"]
 // 	top: -353px

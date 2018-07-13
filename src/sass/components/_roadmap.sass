@@ -11,6 +11,8 @@
         margin-bottom: -95px
         letter-spacing: 4px
         font-weight: 600
+        position: relative
+        z-index: 200
         &--large
             font-size: 72px
             line-height: 60px
@@ -81,11 +83,11 @@
         +sm 
             display: none
     &__title 
-        margin-top: -4px
+        margin-bottom: -4px
         font-size: 36px
         line-height: 40px
         font-weight: 600
-        line-height: 1
+        line-height: 40px
         +sm 
             font-size: 27px
             line-height: 30px
@@ -141,7 +143,7 @@
         float: left
         img 
             margin-left: 195px
-            max-width: auto
+            max-width: 576px
     .roadmap__date
         top: 139px
 
@@ -208,11 +210,12 @@
     .roadmap
         &__main-title
             margin-bottom: 123px
+            padding-left: calc((50vw + 50%) / 2 - 160px)
         &__wrapper 
             max-width: 290px
             margin: 0 auto
         &__item
-            margin-bottom: 44px
+            margin-bottom: 38px
             // height: auto
             max-height: auto
         &__date
@@ -243,10 +246,7 @@
     .roadmap__item:nth-child(2),
     .roadmap__item:nth-child(5),
     .roadmap__item:nth-child(6)
-        // padding-left: calc((50vw + 50%) / 2 - 160px)
-        // .roadmap__item-container
         float: left
-        // width: 400px
         width: calc((100vw + 100%) / 2 - 15px)
         .roadmap__date
             border-radius: 50% 50% 2px 50% 
@@ -268,10 +268,7 @@
         
     .roadmap__item:nth-child(3),
     .roadmap__item:nth-child(4)
-        // padding-right: calc((50vw + 50%) / 2 - 160px)
-        // .roadmap__item-container
         float: right
-        // width: 400px
         width: calc((100vw + 100%) / 2 - 15px)
         .roadmap__date
             border-radius: 50% 50% 50% 2px
@@ -360,8 +357,7 @@
         .roadmap__line
             bottom: 100%    
             left: 21px   
-            img 
-                +rotate(0)
+
     
     .roadmap__item:nth-child(5),
     .roadmap__item:nth-child(6)
@@ -388,7 +384,7 @@
             top: 100%
             left: 21px   
             img 
-                +rotate(0)    
+                max-width: 290px    
 
     .roadmap__item:nth-child(3),
     .roadmap__item:nth-child(4)

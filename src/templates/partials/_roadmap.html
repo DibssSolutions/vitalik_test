@@ -3,14 +3,14 @@ Elliott wave in the forecast. Adding new currencies. General improvement of the 
 img: 'line-top-white.png', imgMob: 'curved-line-mob-top-white.png', cube: 'top-building', cubeSrc: 'building-top-big.png'
 }, {month: 11, year: 2017, title: 'Basic analysis of news', descr: 'Accounting for news in the forecast of neurobot. Basic
 analysis of market sentiment.', type: 'active', icon: 'analitics', img: 'line-dotted.png', imgMob: 'curved-line-mob-dotted.png',
-cube: 'middle-building-upper', cubeSrc: 'building-middle-small-upper.png'}, {month: 01, year: 2018, title: 'API for trading
+cube: 'middle-building-upper', cubeSrc: 'building-middle-small-upper.png'}, {month: '01', year: 2018, title: 'API for trading
 systems', descr: 'The launch of a beta api for developing trading robots on the platform Neurobot.', type: 'right', icon:
-'api-icon', img: 'line-dotted-left.png'}, {month: 03, year: 2018, title: 'Improved news analysis', descr: 'Grouping news
+'api-icon', img: 'line-dotted-left.png'}, {month: '03', year: 2018, title: 'Improved news analysis', descr: 'Grouping news
 into semantic chains according to the positive and negative scenarios. This will enable neurobot to predict the emerging
-of news critical to the market.', type: 'left', icon: 'improved_analitics', img: 'line-dotted.png'}, {month: 04, year: 2018,
+of news critical to the market.', type: 'left', icon: 'improved_analitics', img: 'line-dotted.png'}, {month: '04', year: 2018,
 title: 'Adding new trading instruments', descr: 'Forecasting tokens. The overall improvement in accuracy of the algorithm.',
 type: 'right', icon: 'trading', img: 'line-dotted-left.png', imgMob: 'curved-line-mob-dotted-reverted.png', cube: 'middle-building-lower',
-cubeSrc: 'building-middle-small-lower.png'}, {month: 03, year: 2018, title: 'The release version of Neurobot', descr: 'Run
+cubeSrc: 'building-middle-small-lower.png'}, {month: '03', year: 2018, title: 'The release version of Neurobot', descr: 'Run
 the release version API for developing trading robots.', type: 'left', icon: 'rocket', img: 'line-bottom.png', imgMob: 'curved-line-mob-dotted-bottom.png',
 cube: 'bottom-building', cubeSrc: 'building-bottom-small.png'} ] %}
 
@@ -33,10 +33,10 @@ cube: 'bottom-building', cubeSrc: 'building-bottom-small.png'} ] %}
                         {% endif %} {% if item.img and item.imgMob %}
                         <picture>
                             <source srcset="img/{{item.imgMob}}" media="(max-width: 767px)">
-                            <img srcset="img/{{item.img}}" alt="img/{{item.img}}">
+                            <img class="roadmap__line-img" srcset="img/{{item.img}}" alt="img/{{item.img}}">
                         </picture>
                         {% else %}
-                        <img src="img/{{item.img}}" alt="img/{{item.img}}"> {% endif %}
+                        <img class="roadmap__line-img" src="img/{{item.img}}" alt="img/{{item.img}}"> {% endif %}
                     </div>
 
                     {% if item.type === 'active' %}
@@ -63,18 +63,6 @@ cube: 'bottom-building', cubeSrc: 'building-bottom-small.png'} ] %}
                 </div>
             </div>
             {% endfor %}
-            <!-- <div data-cube='top-building'>
-                <img src="img/building-top-big.png" alt="">
-            </div>
-            <div data-cube='middle-building-upper'>
-                <img src="img/building-middle-small-upper.png" alt="">
-            </div>
-            <div data-cube='middle-building-lower'>
-                <img src="img/building-middle-small-lower.png" alt="">
-            </div>
-            <div data-cube='bottom-building'>
-                <img src="img/building-bottom-small.png" alt="">
-            </div> -->
             <div data-cube='roadmap-cube'>
                 <img src="img/box3_light.png" alt="">
             </div>
